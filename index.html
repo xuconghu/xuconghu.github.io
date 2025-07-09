@@ -2238,57 +2238,57 @@
     </style>
 </head>
 <body>
-    <!-- Loading界面（词汇滚动） - 完全独立，不受任何容器影响 -->
-    <!-- 进度条 -->
+    <!-- Loading Screen (Word Reel) - Fully independent -->
+    <!-- Progress Bar -->
     <div class="progress-container">
         <div class="progress-bar" id="progressBar"></div>
     </div>
 
     <div class="container">
         <div class="reel" id="reel">
-            <!-- 词汇将通过JavaScript动态添加 -->
+            <!-- Words will be dynamically added via JavaScript -->
         </div>
     </div>
     
-    <!-- 蒙版覆盖层 -->
+    <!-- Mask Overlay -->
     <div class="mask-overlay"></div>
 
-    <!-- 页面容器（只在loading完成后显示） -->
+    <!-- Page Container (Visible only after loading is complete) -->
     <div class="page-container" id="pageContainer" style="display: none;">
-        <!-- 第一页（主界面 - 签名界面） -->
+        <!-- Page 1 (Main Interface - Signature) -->
         <div class="page page-1" id="page1">
         </div>
 
 
     </div>
 
-    <!-- 毛玻璃过渡遮罩层 -->
+    <!-- Glass Transition Overlay -->
     <div class="glass-transition-overlay" id="glassOverlay"></div>
             
-    <!-- 第二页内容（About Me） -->
+    <!-- Page 2 Content (About Me) -->
     <div class="page-2-content" id="page2Content">
-        <!-- 左侧图片 -->
+        <!-- Left Image -->
         <div class="about-image-container">
             <img src="about_me.jpg" alt="About Me" class="about-image">
                 </div>
         
-        <!-- 右侧文字内容 -->
+        <!-- Right Text Content -->
         <div class="about-text-container">
-            <!-- 顶部小标题 -->
+            <!-- Meta Info -->
             <p class="page-2-meta">Xucong Hu - b. 2002</p>
             
-            <!-- 主标题区域 -->
+            <!-- Title Section -->
             <div class="title-section">
                 <h1 class="page-2-main-title">ABOUT ME</h1>
                 <div class="chinese-name-container" id="chineseNameContainer">
                     <svg class="chinese-name-svg" viewBox="0 0 400 120" xmlns="http://www.w3.org/2000/svg">
-                        <!-- 中文手写签名 -->
+                        <!-- Chinese Handwritten Signature -->
                         <text class="chinese-name-text" x="170" y="70" text-anchor="middle" dominant-baseline="middle">胡许聪</text>
                     </svg>
                 </div>
             </div>
             
-            <!-- 主要内容 -->
+            <!-- Main Content -->
             <div class="page-2-content-text">
                 <p>Hi! I'm <strong>Xucong</strong>, a first-year master's student in <strong>Psychology</strong> at <strong>Zhejiang University</strong>, working in the Social Cognition Lab with Prof. <strong><a href="https://scholar.google.com.hk/citations?user=-Qf9-AgAAAAJ&hl=zh-CN&oi=ao" target="_blank" class="profile-link">Jifan Zhou</a></strong>. I'm on track to graduate in June 2027. Before starting my master's, I earned my B.Sc. in Psychology from <strong>Southwest University</strong> in Chongqing, China. During undergrad, I also worked as a research assistant in several labs at the <strong>Chinese Academy of Sciences</strong> and <strong>Tsinghua University</strong>, where I enjoyed turning curiosity into hands-on research.</p>
                 
@@ -2301,17 +2301,17 @@
         </div>
     </div>
 
-    <!-- 第三页内容（Project） -->
+    <!-- Page 3 Content (Project) -->
     <div class="page-3-content" id="page3Content">
         <div class="project-container">
-            <!-- 项目标题 -->
+            <!-- Project Header -->
             <div class="project-header">
                 <div class="project-title-section">
                     <h1 class="project-main-title">RESEARCH & PROJECTS</h1>
                     <p class="project-subtitle">Academic Publications & Research Work</p>
                 </div>
                 
-                <!-- Google Scholar引用量计数器 -->
+                <!-- Google Scholar Citation Counter -->
                 <div class="citation-counter">
                     <svg class="scholar-hat-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path d="M12 3L1 9l11 6 9-4.5V18h1V9z"/>
@@ -2328,16 +2328,16 @@
                 </div>
             </div>
             
-            <!-- 项目分类导航 -->
+            <!-- Project Navigation -->
             <div class="project-nav">
                 <button class="project-nav-btn active" data-category="all">All</button>
                 <button class="project-nav-btn" data-category="published">Published</button>
                 <button class="project-nav-btn" data-category="under-review">Under Review/Submission</button>
             </div>
             
-            <!-- 项目内容区域 -->
+            <!-- Project Grid -->
             <div class="project-grid">
-                <!-- 项目卡片1 - R2-D2 Perspective-Taking -->
+                <!-- Project Card 1 - R2-D2 Perspective-Taking -->
                 <div class="project-card" data-category="published" data-project="gossip-robot">
                     <div class="project-image-container">
                         <img src="project/cognition/cognition.jpg" alt="R2-D2 Perspective-Taking Research" class="project-image" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgdmlld0JveD0iMCAwIDQwMCAzMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iMzAwIiBmaWxsPSIjZjVmN2ZhIi8+CjxyZWN0IHg9IjE0MCIgeT0iMTEwIiB3aWR0aD0iMTIwIiBoZWlnaHQ9IjgwIiBmaWxsPSIjNUY3NkE3IiBmaWxsLW9wYWNpdHk9IjAuMyIvPgo8dGV4dCB4PSIyMDAiIHk9IjE1NSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE0IiBmaWxsPSIjNUY3NkE3IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkb21pbmFudC1iYXNlbGluZT0ibWlkZGxlIj5Db2duaXRpb248L3RleHQ+Cjwvc3ZnPg=='">
@@ -2358,7 +2358,7 @@
                     </div>
                 </div>
                 
-                <!-- 项目卡片2 - Joint Flanker -->
+                <!-- Project Card 2 - Joint Flanker -->
                 <div class="project-card" data-category="published" data-project="joint-flanker">
                     <div class="project-image-container">
                         <img src="project/Psych_journal/psych_journal.jpg" alt="Joint Flanker Research" class="project-image" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgdmlld0JveD0iMCAwIDQwMCAzMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iMzAwIiBmaWxsPSIjZjVmN2ZhIi8+CjxyZWN0IHg9IjE0MCIgeT0iMTEwIiB3aWR0aD0iMTIwIiBoZWlnaHQ9IjgwIiBmaWxsPSIjNUY3NkE3IiBmaWxsLW9wYWNpdHk9IjAuMyIvPgo8dGV4dCB4PSIyMDAiIHk9IjE1NSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE0IiBmaWxsPSIjNUY3NkE3IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkb21pbmFudC1iYXNlbGluZT0ibWlkZGxlIj5Qc3lDaDwvdGV4dD4KPC9zdmc+'">
@@ -2378,7 +2378,7 @@
                     </div>
                 </div>
                 
-                <!-- 项目卡片3 - Robot Animacy -->
+                <!-- Project Card 3 - Robot Animacy -->
                 <div class="project-card" data-category="published" data-project="robot-animacy">
                     <div class="project-image-container">
                         <img src="project/behavioal_sciences/behavioal_sciences.jpg" alt="Robot Animacy Research" class="project-image" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgdmlld0JveD0iMCAwIDQwMCAzMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iMzAwIiBmaWxsPSIjZjVmN2ZhIi8+CjxyZWN0IHg9IjE0MCIgeT0iMTEwIiB3aWR0aD0iMTIwIiBoZWlnaHQ9IjgwIiBmaWxsPSIjNUY3NkE3IiBmaWxsLW9wYWNpdHk9IjAuMyIvPgo8dGV4dCB4PSIyMDAiIHk9IjE1NSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE0IiBmaWxsPSIjNUY3NkE3IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkb21pbmFudC1iYXNlbGluZT0ibWlkZGxlIj5CZWhhdmlvcmFsPC90ZXh0Pgo8L3N2Zz4='">
@@ -2398,7 +2398,7 @@
                     </div>
                 </div>
                 
-                <!-- 项目卡片3 - Face Beauty -->
+                <!-- Project Card 3 - Face Beauty -->
                 <div class="project-card" data-category="published" data-project="face-beauty">
                     <div class="project-image-container">
                         <img src="project/Frontiers_in_psychology/Frontiers_in_psychology.jpg" alt="Face Beauty Research" class="project-image" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgdmlld0JveD0iMCAwIDQwMCAzMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iMzAwIiBmaWxsPSIjZjVmN2ZhIi8+CjxyZWN0IHg9IjE0MCIgeT0iMTEwIiB3aWR0aD0iMTIwIiBoZWlnaHQ9IjgwIiBmaWxsPSIjOGUyOTY1IiBmaWxsLW9wYWNpdHk9IjAuMyIvPgo8dGV4dCB4PSIyMDAiIHk9IjE1NSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE0IiBmaWxsPSIjOGUyOTY1IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkb21pbmFudC1iYXNlbGluZT0ibWlkZGxlIj5Gcm9udGllcnM8L3RleHQ+Cjwvc3ZnPg=='">
@@ -2418,7 +2418,7 @@
                     </div>
                 </div>
                 
-                <!-- 项目卡片4 - Under Review -->
+                <!-- Project Card 4 - Under Review -->
                 <div class="project-card" data-category="under-review" data-project="submitted-janus">
                     <div class="project-image-container">
                         <img src="project/Submitted_1/Submitted_1.jpg" alt="Janus Perspective Research" class="project-image" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgdmlld0JveD0iMCAwIDQwMCAzMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iMzAwIiBmaWxsPSIjZjVmN2ZhIi8+CjxyZWN0IHg9IjE0MCIgeT0iMTEwIiB3aWR0aD0iMTIwIiBoZWlnaHQ9IjgwIiBmaWxsPSIjZmY2ZjAwIiBmaWxsLW9wYWNpdHk9IjAuMyIvPgo8dGV4dCB4PSIyMDAiIHk9IjE1NSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE0IiBmaWxsPSIjZmY2ZjAwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkb21pbmFudC1iYXNlbGluZT0ibWlkZGxlIj5TdWJtaXR0ZWQ8L3RleHQ+Cjwvc3ZnPg=='">
@@ -2437,7 +2437,7 @@
                     </div>
                 </div>
                 
-                <!-- 项目卡片5 - Under Review -->
+                <!-- Project Card 5 - Under Review -->
                 <div class="project-card" data-category="under-review" data-project="submitted-robots">
                     <div class="project-image-container">
                         <img src="project/Under_Submission_1/Under_submission_1.jpg" alt="Robot Appearance Research" class="project-image" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgdmlld0JveD0iMCAwIDQwMCAzMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iMzAwIiBmaWxsPSIjZjVmN2ZhIi8+CjxyZWN0IHg9IjE0MCIgeT0iMTEwIiB3aWR0aD0iMTIwIiBoZWlnaHQ9IjgwIiBmaWxsPSIjZmY2ZjAwIiBmaWxsLW9wYWNpdHk9IjAuMyIvPgo8dGV4dCB4PSIyMDAiIHk9IjE1NSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE0IiBmaWxsPSIjZmY2ZjAwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkb21pbmFudC1iYXNlbGluZT0ibWlkZGxlIj5TdWJtaXR0ZWQ8L3RleHQ+Cjwvc3ZnPg=='">
@@ -2456,7 +2456,7 @@
                     </div>
                 </div>
                 
-                <!-- 项目卡片6 - Submitted -->
+                <!-- Project Card 6 - Submitted -->
                 <div class="project-card" data-category="under-review" data-project="submitted-explainability">
                     <div class="project-image-container">
                         <img src="project/Submitted_2/Submitted_2.jpg" alt="Robot Explainability Research" class="project-image" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgdmlld0JveD0iMCAwIDQwMCAzMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iMzAwIiBmaWxsPSIjZjVmN2ZhIi8+CjxyZWN0IHg9IjE0MCIgeT0iMTEwIiB3aWR0aD0iMTIwIiBoZWlnaHQ9IjgwIiBmaWxsPSIjMDA3YWZmIiBmaWxsLW9wYWNpdHk9IjAuMyIvPgo8dGV4dCB4PSIyMDAiIHk9IjE1NSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE0IiBmaWxsPSIjMDA3YWZmIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkb21pbmFudC1iYXNlbGluZT0ibWlkZGxlIj5TdWJtaXR0ZWQ8L3RleHQ+Cjwvc3ZnPg=='">
@@ -2475,7 +2475,7 @@
                     </div>
                 </div>
                 
-                <!-- 项目卡片7 - Under Submission -->
+                <!-- Project Card 7 - Under Submission -->
                 <div class="project-card" data-category="under-review" data-project="under-submission-robots2">
                     <div class="project-image-container">
                         <img src="project/Under_Submission_2/Under_Submission_2.jpg" alt="Robot Appearance Research 2" class="project-image" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgdmlld0JveD0iMCAwIDQwMCAzMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iMzAwIiBmaWxsPSIjZjVmN2ZhIi8+CjxyZWN0IHg9IjE0MCIgeT0iMTEwIiB3aWR0aD0iMTIwIiBoZWlnaHQ9IjgwIiBmaWxsPSIjZmY2ZjAwIiBmaWxsLW9wYWNpdHk9IjAuMyIvPgo8dGV4dCB4PSIyMDAiIHk9IjE1NSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE0IiBmaWxsPSIjZmY2ZjAwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkb21pbmFudC1iYXNlbGluZT0ibWlkZGxlIj5TdWJtaXR0ZWQ8L3RleHQ+Cjwvc3ZnPg=='">
@@ -2498,7 +2498,7 @@
         </div>
     </div>
 
-    <!-- 滚动指示器（只在主界面显示后出现） -->
+    <!-- Scroll Indicator (Visible only after main interface is shown) -->
     <div class="scroll-indicator" id="scrollIndicator" style="display: none;">
         <div class="scroll-dot active" data-page="1"></div>
         <div class="scroll-dot" data-page="2"></div>
@@ -2507,7 +2507,7 @@
         <div class="scroll-dot" data-page="5"></div>
     </div>
 
-    <!-- 第四页内容（Skills） -->
+    <!-- Page 4 Content (Skills) -->
     <div class="page-4-content" id="page4Content">
         <div class="skills-container-new skills-hybrid-layout">
             <!-- Left Pane for Icons -->
@@ -2551,7 +2551,21 @@
         </div>
     </div>
 
-    <!-- 项目详情模态框 -->
+    <!-- Page 5 Content (Contact) -->
+    <div class="page-5-content" id="page5Content">
+        <div class="contact-container">
+            <h1 class="contact-title">Get In Touch</h1>
+            <p class="contact-subtitle">I'm currently seeking Ph.D. and Research Assistant (RA) positions in Human-Robot Interaction (HRI).<br>Feel free to reach out if you have any opportunities or just want to connect!</p>
+            <a href="mailto:xuconghu@zju.edu.cn" class="contact-email-link">xuconghu@zju.edu.cn</a>
+            
+            <div class="contact-footer">
+                <button class="back-to-top-btn" id="backToTopBtn">Back to Top</button>
+                <p class="copyright-footer">© Xucong Hu 2025</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Project Details Modal -->
     <div class="project-modal" id="projectModal">
         <div class="modal-content">
             <div class="modal-header">
@@ -2587,22 +2601,8 @@
         </div>
     </div>
 
-    <!-- 第五页内容（Contact） -->
-    <div class="page-5-content" id="page5Content">
-        <div class="contact-container">
-            <h1 class="contact-title">Get In Touch</h1>
-            <p class="contact-subtitle">I'm currently seeking Ph.D. and Research Assistant (RA) positions in Human-Robot Interaction (HRI).<br>Feel free to reach out if you have any opportunities or just want to connect!</p>
-            <a href="mailto:xuconghu@zju.edu.cn" class="contact-email-link">xuconghu@zju.edu.cn</a>
-            
-            <div class="contact-footer">
-                <button class="back-to-top-btn" id="backToTopBtn">Back to Top</button>
-                <p class="copyright-footer">© Xucong Hu 2025</p>
-            </div>
-        </div>
-    </div>
-
     <script>
-        console.log("脚本开始执行");
+        console.log("Script execution started.");
 
         // 项目数据
         const projectData = {
@@ -2755,7 +2755,7 @@
                 }
                 
                 // 如果所有代理都失败，使用备用数据
-                console.log('All proxies failed, using fallback data');
+                console.log('All proxies failed, using fallback data.');
                 citationsElement.textContent = fallbackCount;
                 
             } catch (error) {
@@ -2906,7 +2906,7 @@
 
         // 创建词汇元素 - 制造无限滚动的视觉效果
         function createWords() {
-            console.log("开始创建词汇");
+            console.log("Creating words...");
             
             // 创建更多循环让看起来像无限滚动
             for (let cycle = 0; cycle < 12; cycle++) {
@@ -2919,7 +2919,7 @@
                                      });
              }
              
-             console.log(`创建完成: ${wordElements.length} 个词汇，制造无限滚动效果`);
+             console.log(`Creation complete: ${wordElements.length} words created for infinite scroll effect.`);
         }
 
         // 不再需要更新中心词汇的函数
@@ -2927,7 +2927,7 @@
 
         // 滚动动画 - 慢快慢，同步进度条
         function startScrolling() {
-            console.log("开始滚动");
+            console.log("Scrolling started.");
             let count = 0;
             
             // 计算Welcome应该在的最终位置（与stopAtWelcome函数中的计算一致）
@@ -2947,7 +2947,7 @@
             const speed = 16; // 滚动间隔 (ms)，约60fps
             const maxCount = scrollDuration / speed; // 按时间计算总次数
             
-            console.log(`从当前位置${currentOffset}滚动到目标位置${targetOffset}，总距离${totalDistance}像素，分${maxCount}次完成`);
+            console.log(`Scrolling from ${currentOffset} to target ${targetOffset}, total distance ${totalDistance}px in ${maxCount} steps.`);
             
             const initialOffset = currentOffset; // 记录初始偏移量
             
@@ -2985,7 +2985,7 @@
                     // 进度条完成
                     progressBar.style.width = '100%';
                     
-                    console.log("滚动动画完成，Welcome已精确居中");
+                    console.log("Scrolling animation complete. 'Welcome' is centered.");
                     
                     // 等待0.5秒后开始词汇消失动画
                     setTimeout(() => {
@@ -2999,7 +2999,7 @@
 
         // 词汇消失动画 - 自上而下和自下而上，Welcome也消失
         function startDisappearAnimation() {
-            console.log("开始词汇消失动画");
+            console.log("Starting word disappear animation.");
             
             // 进度条往上消失
             const progressContainer = document.querySelector('.progress-container');
@@ -3026,11 +3026,11 @@
             });
             
             if (!welcomeElement) {
-                console.log("未找到Welcome元素");
+                console.log("'Welcome' element not found.");
                 return;
             }
             
-            console.log(`找到Welcome元素，位置：${welcomePosition}`);
+            console.log(`Found 'Welcome' element at index: ${welcomePosition}`);
             
             // 分别处理上方和下方的词汇，包括Welcome
             const animationDuration = 800; // 消失动画时长，更快
@@ -3067,7 +3067,7 @@
                 showNewInterface();
             }, 1000);
             
-            console.log("词汇消失动画已启动");
+            console.log("Word disappear animation initiated.");
         }
 
         // 显示新界面
@@ -3201,7 +3201,7 @@
                             resumeButton.classList.add('animation-complete');
                             // 主动画完成，允许切换到第二页
                             mainAnimationCompleted = true;
-                            console.log("主动画完成，现在可以滚动到第二页");
+                            console.log("Main animation complete. Scrolling to other pages is now enabled.");
                             
                             // 显示滚动指示器
                             const scrollIndicator = document.getElementById('scrollIndicator');
@@ -3316,7 +3316,7 @@
             // 等待DOM元素创建完成
             setTimeout(() => {
                 const socialLinks = document.querySelectorAll('.social-link');
-                console.log('找到社交链接数量:', socialLinks.length);
+                console.log('Number of social links found:', socialLinks.length);
                 
                 socialLinks.forEach((link, index) => {
                     // 强制设置样式确保可点击
@@ -3326,11 +3326,11 @@
                     link.style.cursor = 'pointer';
                     
                     // 添加调试信息
-                    console.log(`社交链接 ${index + 1}: ${link.href}`);
+                    console.log(`Social link ${index + 1}: ${link.href}`);
                     
                     // 测试点击事件
                     link.addEventListener('click', function(e) {
-                        console.log('社交链接被点击:', this.href);
+                        console.log('Social link clicked:', this.href);
                         // 让链接正常跳转，不阻止默认行为
 
                         // 如果默认行为被阻止，手动打开链接
@@ -3345,7 +3345,7 @@
                     
                     // 添加悬停测试
                     link.addEventListener('mouseenter', function() {
-                        console.log('鼠标悬停在社交链接上:', this.href);
+                        console.log('Mouse entered social link:', this.href);
                         this.style.transform = 'translateY(-2px)';
                     });
                     
@@ -3355,7 +3355,7 @@
 
                     // 添加双击事件作为备用
                     link.addEventListener('dblclick', function(e) {
-                        console.log('社交链接双击:', this.href);
+                        console.log('Social link double-clicked:', this.href);
                         if (this.href.startsWith('mailto:')) {
                             window.location.href = this.href;
                         } else {
@@ -3369,12 +3369,12 @@
                 if (socialContainer) {
                     socialContainer.style.pointerEvents = 'auto';
                     socialContainer.style.zIndex = '9999';
-                    console.log('社交链接容器已设置为可点击');
+                    console.log('Social links container is now clickable.');
 
                     // 确保动画完成后添加完全可点击的类
                     setTimeout(() => {
                         socialContainer.classList.add('animation-complete');
-                        console.log('社交链接动画完成，现在完全可点击');
+                        console.log('Social links animation complete. Now fully clickable.');
                     }, 1300); // 0.7s延迟 + 0.6s动画时间
                 }
             }, 500); // 延迟500ms确保DOM创建完成
@@ -3448,7 +3448,7 @@
             if (isTransitioning || currentPage === targetPage) return;
             
             // 如果第一页动画还没完成，不允许切换
-            if ((targetPage === 2 || targetPage === 3 || targetPage === 4) && !mainAnimationCompleted) return;
+            if ((targetPage === 2 || targetPage === 3 || targetPage === 4 || targetPage === 5) && !mainAnimationCompleted) return;
             
             isTransitioning = true;
             const page1 = document.getElementById('page1');
@@ -3466,7 +3466,7 @@
             
             if (targetPage === 2) {
                 // 切换到第二页：主界面文字消失 → 毛玻璃渐变 → About Me渐入
-                console.log("开始切换到第二页");
+                console.log("Switching to page 2...");
                 
                 // 隐藏其他页面
                 page3Content.classList.remove('show');
@@ -3497,7 +3497,7 @@
                 
             } else if (targetPage === 3) {
                 // 切换到第三页：当前页面消失 → 毛玻璃渐变 → Project页面渐入
-                console.log("开始切换到第三页");
+                console.log("Switching to page 3...");
                 
                 // 1. 隐藏其他页面内容
                 if (currentPage === 1) {
@@ -3534,7 +3534,7 @@
                 
             } else if (targetPage === 4) {
                 // 切换到第四页：直接显示Skills页面，不使用全局毛玻璃遮罩
-                console.log("开始切换到第四页");
+                console.log("Switching to page 4...");
                 
                 // 1. 隐藏其他页面内容
                 if (currentPage === 1) {
@@ -3567,7 +3567,7 @@
                 
             } else if (targetPage === 5) {
                 // 切换到第五页
-                console.log("开始切换到第五页");
+                console.log("Switching to page 5...");
                 
                 // 1. 隐藏其他页面内容
                 if (currentPage === 1) {
@@ -3598,7 +3598,7 @@
                 
             } else {
                 // 返回第一页：其他页面消失 → 毛玻璃消失 → 主界面文字重现
-                console.log("开始返回第一页");
+                console.log("Switching back to page 1...");
                 
                 // 1. 隐藏其他页面内容
                 page2Content.classList.remove('show');
@@ -3817,19 +3817,19 @@
             let currentMethod = 0;
             function tryNextMethod() {
                 if (currentMethod < methods.length) {
-                    console.log(`尝试方法 ${currentMethod + 1}...`);
+                    console.log(`Trying method ${currentMethod + 1}...`);
                     methods[currentMethod]()
                         .then(success => {
                             if (!success && currentMethod < methods.length - 1) {
                                 currentMethod++;
                                 setTimeout(tryNextMethod, 1000);
                             } else if (!success) {
-                                console.log('所有方法都失败，使用备用数据');
+                                console.log('All methods failed. Using fallback data.');
                                 useFallbackData(citationElement, refreshButton, userId);
                             }
                         })
                         .catch(error => {
-                            console.log(`方法 ${currentMethod + 1} 失败:`, error);
+                            console.log(`Method ${currentMethod + 1} failed:`, error);
                             currentMethod++;
                             if (currentMethod < methods.length) {
                                 setTimeout(tryNextMethod, 1000);
@@ -3838,6 +3838,7 @@
                             }
                         });
                 } else {
+                    console.log('All methods failed. Using fallback data.');
                     useFallbackData(citationElement, refreshButton, userId);
                 }
             }
@@ -3949,7 +3950,7 @@
                 }
                 
                 if (totalCitations !== null && !isNaN(totalCitations) && totalCitations >= 0) {
-                    console.log(`成功获取引用数据: ${totalCitations}`);
+                    console.log(`Successfully fetched citation data: ${totalCitations}`);
                     
                     // 数字动画效果
                     animateNumber(citationElement, totalCitations);
@@ -3963,10 +3964,10 @@
                     
                     return true; // 成功
                 } else {
-                    throw new Error('无法找到有效的引用数据');
+                    throw new Error('Could not find valid citation data.');
                 }
             } catch (error) {
-                console.error('解析HTML失败:', error);
+                console.error('Failed to parse HTML:', error);
                 if (refreshButton) {
                     refreshButton.classList.remove('loading');
                 }
@@ -3976,7 +3977,7 @@
 
         function useFallbackData(citationElement, refreshButton, userId) {
             // 如果所有方法都失败，使用备用数据
-            console.log('所有获取方法都失败，使用备用方案');
+            console.log('All fetch methods failed. Using fallback solution.');
             
             // 这里可以设置一个预设的引用数，或者定期手动更新
             const lastKnownCitations = 8; // 你可以手动更新这个数字
@@ -3992,7 +3993,7 @@
                     refreshButton.classList.remove('loading');
                 }
                 
-                console.log(`使用备用引用数据: ${lastKnownCitations}`);
+                console.log(`Using fallback citation data: ${lastKnownCitations}`);
             }, 500);
         }
 
@@ -4131,7 +4132,7 @@
 
         // 初始化
         function init() {
-            console.log("初始化开始");
+            console.log("Initialization started.");
             createWords();
             
             // 重置进度条
@@ -4153,14 +4154,14 @@
             
             reel.style.transform = `translateY(${currentOffset}px)`;
             
-            console.log(`屏幕中心: ${screenCenter}, 词汇高度: ${wordHeight}`);
-            console.log(`Hi索引: ${hiIndex} (${words[hiIndex]}), 计算偏移量: ${currentOffset}`);
-            console.log("初始化完成，Hi已精确居中，等待0.5秒开始滚动");
+            console.log(`Screen center: ${screenCenter}, Word height: ${wordHeight}`);
+            console.log(`'Hi' index: ${hiIndex} (${words[hiIndex]}), Calculated offset: ${currentOffset}`);
+            console.log("Initialization complete. 'Hi' is centered. Waiting 0.5s to start scrolling.");
             
             // 调试：打印所有词汇的位置
-            console.log("词汇列表:", words);
-            console.log("grateful索引:", words.indexOf("grateful"));
-            console.log("Hi索引:", words.indexOf("Hi"));
+            console.log("Word list:", words);
+            console.log("'grateful' index:", words.indexOf("grateful"));
+            console.log("'Hi' index:", words.indexOf("Hi"));
             
             // 0.5秒后开始滚动
             setTimeout(() => {
@@ -4195,7 +4196,7 @@
             }
         });
 
-        console.log("脚本执行完成");
+        console.log("Script execution finished.");
     </script>
 </body>
 </html> 
