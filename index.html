@@ -2926,66 +2926,76 @@
         // 蒙版会自动让中心位置的词汇高亮显示
 
         // 滚动动画 - 慢快慢，同步进度条
+        // Scroll animation - slow-fast-slow, synced with progress bar
         function startScrolling() {
             console.log("Scrolling started.");
             let count = 0;
-            
-            // 计算Welcome应该在的最终位置（与stopAtWelcome函数中的计算一致）
-            const screenCenter = window.innerHeight / 2;
-            const wordHeight = 52;
-            
-            // 第4个循环的Welcome，下面还有8个循环营造无限感
+
+            const allWords = document.querySelectorAll('.word');
+            if (allWords.length === 0) {
+                console.error("No words found to scroll.");
+                return;
+            }
+
+            // Target the "Welcome" in the 4th cycle (index 3).
             const welcomeIndex = words.indexOf("Welcome") + words.length * 3;
+            const welcomeElement = allWords[welcomeIndex];
+
+            if (!welcomeElement) {
+                console.error(`Target 'Welcome' element at index ${welcomeIndex} not found. Halting.`);
+                return;
+            }
             
-            // 计算让Welcome位于屏幕中央的目标偏移量
-            const targetOffset = screenCenter - (welcomeIndex * wordHeight) - (wordHeight / 2) + 190;
+            // Calculate everything dynamically based on current positions
+            const screenCenter = window.innerHeight / 2;
+            const welcomeRect = welcomeElement.getBoundingClientRect();
+            const welcomeCenter = welcomeRect.top + welcomeRect.height / 2;
             
-            // 计算需要滚动的总距离
-            const totalDistance = currentOffset - targetOffset;
+            // The distance we need to move the reel
+            const scrollDistance = welcomeCenter - screenCenter;
+
+            const initialOffset = currentOffset;
+            const targetOffset = initialOffset - scrollDistance; // The final translateY value
+            const totalDistance = initialOffset - targetOffset;
             
-            const scrollDuration = 3000; // 3秒滚动时间
-            const speed = 16; // 滚动间隔 (ms)，约60fps
-            const maxCount = scrollDuration / speed; // 按时间计算总次数
+            console.log(`Current Offset: ${initialOffset.toFixed(1)}, Target Offset: ${targetOffset.toFixed(1)}, Scroll Distance: ${scrollDistance.toFixed(1)}`);
             
-            console.log(`Scrolling from ${currentOffset} to target ${targetOffset}, total distance ${totalDistance}px in ${maxCount} steps.`);
-            
-            const initialOffset = currentOffset; // 记录初始偏移量
+            const scrollDuration = 3000; // 3-second scroll
+            const speed = 16; // ms interval, ~60fps
+            const maxCount = scrollDuration / speed; // Total steps based on time
             
             const scroll = () => {
                 if (count < maxCount) {
-                    // 慢快慢的缓动函数：easeInOut
-                    const t = count / maxCount; // 进度百分比 0-1
+                    // Ease-in-out function for smooth acceleration and deceleration
+                    const t = count / maxCount; // Progress percentage (0-1)
                     let easeInOut;
                     
                     if (t < 0.5) {
-                        // 前半段：慢到快 (easeIn)
-                        easeInOut = 2 * t * t;
+                        easeInOut = 2 * t * t; // easeIn
                     } else {
-                        // 后半段：快到慢 (easeOut)
-                        easeInOut = 1 - 2 * (1 - t) * (1 - t);
+                        easeInOut = 1 - 2 * (1 - t) * (1 - t); // easeOut
                     }
                     
-                    // 根据缓动函数计算当前应该到达的位置
+                    // Calculate current position based on easing
                     const currentDistance = totalDistance * easeInOut;
                     currentOffset = initialOffset - currentDistance;
                     
                     reel.style.transform = `translateY(${currentOffset}px)`;
                     
-                    // 更新进度条
+                    // Update progress bar
                     const progress = (count / maxCount) * 100;
                     progressBar.style.width = progress + '%';
                     
                     count++;
                     setTimeout(scroll, speed);
                 } else {
-                    // 滚动结束，直接设置到目标位置确保精确
+                    // Scrolling finished, set to the exact target position to ensure accuracy
                     currentOffset = targetOffset;
                     reel.style.transform = `translateY(${currentOffset}px)`;
                     
-                    // 进度条完成
                     progressBar.style.width = '100%';
                     
-                    console.log("Scrolling animation complete. 'Welcome' is centered.");
+                    console.log("Scrolling animation complete. 'Welcome' should be centered.");
                     
                     // Wait 0.5 seconds then start the disappear animation
                     setTimeout(() => {
@@ -2999,7 +3009,7 @@
 
         // Word disappear animation - from top to bottom and bottom to top, Welcome also disappears
         function startDisappearAnimation(welcomePosition) {
-            console.log("Starting word disappear animation.");
+            console.log(`Starting word disappear animation. Received index: ${welcomePosition}`);
             
             // Progress bar disappears upwards
             const progressContainer = document.querySelector('.progress-container');
@@ -3007,53 +3017,52 @@
             progressContainer.style.transform = 'translateX(-50%) translateY(-30px)';
             progressContainer.style.opacity = '0';
             
-            // Get all word elements
             const allWordElements = document.querySelectorAll('.word');
             
-            // We get the index directly, so no more fragile searching logic.
-            // A simple check to ensure we received a valid index.
-            if (typeof welcomePosition === 'undefined' || welcomePosition < 0) {
-                console.error("Could not start disappear animation: Invalid 'Welcome' index provided.");
-                // As a fallback, try to find it manually, increasing tolerance.
+            // Validate the received index
+            if (typeof welcomePosition === 'undefined' || welcomePosition < 0 || welcomePosition >= allWordElements.length) {
+                console.error(`Could not start animation: Invalid 'Welcome' index (${welcomePosition}). Attempting fallback.`);
+                
+                // Fallback: Find 'Welcome' near the center of the screen
                 const screenCenter = window.innerHeight / 2;
                 let found = false;
                 allWordElements.forEach((element, index) => {
                     if (element.textContent === 'Welcome' && !found) {
                         const rect = element.getBoundingClientRect();
-                        if (Math.abs(rect.top + rect.height/2 - screenCenter) < 50) { // Increased tolerance to 50px
+                        // Check if the element's center is within a generous 50px range of the screen center
+                        if (Math.abs(rect.top + rect.height / 2 - screenCenter) < 50) { 
                             welcomePosition = index;
                             found = true;
+                            console.log(`Fallback successful: Found 'Welcome' at index ${welcomePosition} visually.`);
                         }
                     }
                 });
                 
                 if (!found) {
-                    console.error("'Welcome' element could not be found, even with fallback. Halting.");
+                    console.error("Fallback failed: 'Welcome' element could not be found. Halting animation.");
+                    // To prevent getting stuck, we could force the transition to the next stage.
                     return;
                 }
             }
             
-            console.log(`Animating with 'Welcome' element at index: ${welcomePosition}`);
+            console.log(`Animation will proceed with 'Welcome' at index: ${welcomePosition}`);
             
-            // 分别处理上方和下方的词汇，包括Welcome
-            const animationDuration = 800; // 消失动画时长，更快
-            const maxDistance = 20; // 最大消失距离
+            // Animate words disappearing
+            const animationDuration = 800;
+            const maxDistance = 20;
             
             allWordElements.forEach((element, index) => {
                 const distance = Math.abs(index - welcomePosition);
-                const delay = distance * 30; // 每个词汇的延迟时间，更快
+                const delay = distance * 30;
                 
                 setTimeout(() => {
                     element.style.transition = `opacity ${animationDuration}ms ease-out, transform ${animationDuration}ms ease-out`;
                     
                     if (index < welcomePosition) {
-                        // 上方词汇：向上消失
                         element.style.transform = `translateY(-${maxDistance}px)`;
                     } else if (index > welcomePosition) {
-                        // 下方词汇：向下消失
                         element.style.transform = `translateY(${maxDistance}px)`;
                     } else {
-                        // Welcome：向上消失，稍微延迟
                         setTimeout(() => {
                             element.style.transform = `translateY(-${maxDistance}px)`;
                             element.style.opacity = '0';
@@ -3065,14 +3074,56 @@
                 }, delay);
             });
             
-            // 所有词汇消失后显示新界面
+            // Show the new interface after the disappear animation
             setTimeout(() => {
                 showNewInterface();
             }, 1000);
             
             console.log("Word disappear animation initiated.");
         }
+        
+        // Initialization
+        function init() {
+            console.log("Initialization started.");
+            createWords();
+            
+            progressBar.style.width = '0%';
+            
+            // Dynamically center 'Hi' on the screen initially
+            const screenCenter = window.innerHeight / 2;
+            const allWords = document.querySelectorAll('.word');
+            const hiIndex = words.indexOf("Hi");
 
+            if (allWords.length > hiIndex) {
+                const hiElement = allWords[hiIndex];
+                const hiRect = hiElement.getBoundingClientRect();
+                const hiCenter = hiRect.top + hiRect.height / 2;
+                
+                // Calculate the offset needed to move 'Hi' to the screen center
+                currentOffset = screenCenter - hiCenter;
+                reel.style.transform = `translateY(${currentOffset}px)`;
+                console.log(`Initialization complete. 'Hi' is centered. Calculated offset: ${currentOffset.toFixed(1)}`);
+            } else {
+                console.error("'Hi' element not found for initial centering.");
+            }
+            
+            // Wait 0.5s before starting the scroll
+            setTimeout(() => {
+                startScrolling();
+            }, 500);
+            
+            // Initialize scroll events after main animation starts
+            setTimeout(() => {
+                initScrollEvents();
+            }, 1000);
+            
+            // Initialize project filters
+            initProjectFilters();
+            
+            // Initialize refresh button
+            initRefreshButton();
+        }
+        
         // showNewInterface function
         function showNewInterface() {
             // 隐藏loading界面
