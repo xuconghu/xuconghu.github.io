@@ -1,0 +1,3 @@
+Title: Causal Relationship Between Robot Perception and Behavior: A User-Centered Explainability Approach
+Author: Xucong Hu, Enjie Xu, Haokui Xu, Mowei Shen, Jifan Zhou
+Time: 2025

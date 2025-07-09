@@ -1,0 +1,26 @@
+Title: Effects of Robot Animacy and Emotional Expressions on Perspective-Taking Abilities: A Comparative Study across
+Age Groups
+Journal: Behavioral Sciences
+Author: Xucong Hu, Song Tong
+Abstract: The global population is inevitably aging due to increased life expectancy and declining birth rates, leading to an amplified demand for innovative social and healthcare services. One
+promising avenue is the introduction of companion robots. These robots are designed to provide physical assistance as well as emotional support and companionship, necessitating effective human–
+robot interaction (HRI). This study explores the role of cognitive empathy within HRI, focusing on the influence of robot facial animacy and emotional expressions on perspective-taking abilities—a
+key aspect of cognitive empathy—across different age groups. To this end, a director task involving 60 participants (30 young and 30 older adults) with varying degrees of robot facial animacy (0%,
+50%, 100%) and emotional expressions (happy, neutral) was conducted. The results revealed that older adults displayed enhanced perspective-taking with higher animacy faces. Interestingly, while
+happiness on high-animacy faces improved perspective-taking, the same expression on low-animacy faces reduced it. These findings highlight the importance of considering facial animacy and emotional
+expressions in designing companion robots for older adults to optimize user engagement and acceptance. The study’s implications are pertinent to the design and development of socially effective
+service robots, particularly for the aging population.
+
+Recomended Citation: 
+Format:APA
+@article{hu2023effects,
+  title={Effects of robot animacy and emotional expressions on perspective-taking abilities: a comparative study across age groups},
+  author={Hu, Xucong and Tong, Song},
+  journal={Behavioral Sciences},
+  volume={13},
+  number={9},
+  pages={728},
+  year={2023},
+  publisher={MDPI}
+}
+}

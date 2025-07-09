@@ -1,0 +1,17 @@
+Title: Enhancement of joint flanker effect in intergroup competition
+Journal: PsyCh Journal
+Author: YangZhao, XucongHu, JifanZhou, MoweiShen, HaokuiXu
+Abstract: Representing the mental state of the partner lays the foundation for successful social interaction. While the representation of group members has been extensively studied, it is unclear how intergroup interactions affect it. In three experiments utilizing the joint flanker task, we found that competition between groups brought about a greater joint flanker effect (Experiment 1). Such phenomenon was not due to competition per se, as competition that occurred between individuals from different groups did not enhance the joint flanker effect (Experiment 2). Using the minimal grouping method to directly manipulate group entitativity, we found that the joint flanker effect was larger when participants perceived the group as being more closely connected; conversely, when they perceived the group as less close, the joint flanker effect was attenuated (Experiment 3). These results suggested that beliefs about the group may be key to how group competition enhanced the joint flanker effect. The potential cognitive mechanisms producing this phenomenon are fully discussed. Overall, our study is the first to explore the impact of intergroup interactions on the joint flanker effect and provides a new perspective on understanding the relationship between within-group representations and intergroup interactions.
+
+Recomended Citation: 
+Format:APA
+@article{zhao2025enhancement,
+  title={Enhancement of joint flanker effect in intergroup competition},
+  author={Zhao, Yang and Hu, Xucong and Zhou, Jifan and Shen, Mowei and Xu, Haokui},
+  journal={PsyCh Journal},
+  volume={14},
+  number={1},
+  pages={94--102},
+  year={2025},
+  publisher={Wiley Online Library}
+}

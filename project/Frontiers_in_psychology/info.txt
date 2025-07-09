@@ -1,0 +1,16 @@
+Title: Good to see you R2-D2: Inducing spontaneous perspective-taking towards non-human agents through human-like gaze and reach
+Journal: Frontiers in Psychology
+Author: Jiawen Zhu, Zhou Yang, Ruining Ma, Lixing Yin, Xucong Hu
+Abstract: Previous studies indicated that both facial attractiveness (face beauty) and moral judgment (soul beauty) would impact the responses to others’ pain, however, the effects from facial attractiveness were in controversial. Furthermore, whether facial attractiveness would increase or decrease the effects of moral judgment on pain empathy were still unknown. Based on the videos in which actors with high versus low facial attractiveness under pain or non-pain conditions, study 1 recruited 26 undergraduates to assess the effects of facial attractiveness on participants' pain intensity rating scores. Then study 2 recruited 85 undergraduates to examine the effects of facial attractiveness and moral judgment on pain empathy by assessing pain intensity and self-uncomfortableness rating scores. Study 1 found that participants rated higher pain intensity scores to actors with high facial attractiveness compared to low facial attractive actors under pain condition. Study 2 found that participants showed higher pain empathic responses for actors with high moral judgment, no matter their facial attractiveness were high or low. For actors with low moral judgment under pain condition, participants showed higher pain empathy to those with high facial attractiveness compared to those with low facial attractiveness. In conclusion, facial attractiveness could facilitate the empathy responses for other’s pain. High facial attractiveness would increase the pain empathic responses to individuals with low moral judgment, however, low facial attractiveness would not decrease the pain empathic responses to individuals with high moral judgment.
+
+Recomended Citation: 
+Format:APA
+@article{zhu2022face,
+  title={Face beauty or soul beauty? The influence of facial attractiveness and moral judgment on pain empathy},
+  author={Zhu, Jiawen and Yang, Zhou and Ma, Ruining and Yin, Lixing and Hu, Xucong},
+  journal={Frontiers in Psychology},
+  volume={13},
+  pages={990637},
+  year={2022},
+  publisher={Frontiers Media SA}
+}

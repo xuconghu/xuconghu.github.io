@@ -1,0 +1,21 @@
+Title: Good to see you R2-D2: Inducing spontaneous perspective-taking towards non-human agents through human-like gaze and reach
+Journal: Cognition
+Author: Xucong Hu, Haokui Xu, Hui Chen, Mowei Shen, Jifan Zhou
+Abstract: Observing the world from another's perspective is a fundamental social cognitive ability essential for human cooperation. With the increasing prevalence of intelligent systems in our society, highly intelligent social robots 
+such as R2-D2 in Star Wars is becoming a reality, thus it is compelling to explore how this capability can extend from humans to non-human agents. Although previous research indicates that a human-like appearance might 
+facilitate this extension, our study contends that human-like actions are more critical. We conducted four experiments involving agents that did not resemble humans but could perform two human-like actions: reach and 
+gaze, which exhibited the perceptual and behavioral abilities that were essential for social interaction. The experiments found that agents prompted spontaneous perspective-taking among participants when they displayed 
+both actions. Importantly, perspective-taking was maintained only when gaze preceded reach, underscoring the causal relationship that behavior should be interpreted as the consequence of perception. These results highlight 
+the importance of human-like actions rather than mere appearance in fostering spontaneous perspective-taking towards non-human agents, providing insights for improving human-agent interaction.
+
+Recomended Citation: 
+Format:APA
+@article{hu2025good,
+  title={Good to see you R2-D2: Inducing spontaneous perspective-taking towards non-human agents through human-like gaze and reach},
+  author={Hu, Xucong and Xu, Haokui and Chen, Hui and Shen, Mowei and Zhou, Jifan},
+  journal={Cognition},
+  volume={259},
+  pages={106101},
+  year={2025},
+  publisher={Elsevier}
+}
