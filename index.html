@@ -2987,9 +2987,9 @@
                     
                     console.log("Scrolling animation complete. 'Welcome' is centered.");
                     
-                    // 等待0.5秒后开始词汇消失动画
+                    // Wait 0.5 seconds then start the disappear animation
                     setTimeout(() => {
-                        startDisappearAnimation();
+                        startDisappearAnimation(welcomeIndex);
                     }, 500);
                 }
             };
@@ -2997,40 +2997,43 @@
             scroll();
         }
 
-        // 词汇消失动画 - 自上而下和自下而上，Welcome也消失
-        function startDisappearAnimation() {
+        // Word disappear animation - from top to bottom and bottom to top, Welcome also disappears
+        function startDisappearAnimation(welcomePosition) {
             console.log("Starting word disappear animation.");
             
-            // 进度条往上消失
+            // Progress bar disappears upwards
             const progressContainer = document.querySelector('.progress-container');
             progressContainer.style.transition = 'opacity 500ms ease-out, transform 500ms ease-out';
             progressContainer.style.transform = 'translateX(-50%) translateY(-30px)';
             progressContainer.style.opacity = '0';
             
-            // 获取所有词汇元素
+            // Get all word elements
             const allWordElements = document.querySelectorAll('.word');
-            const screenCenter = window.innerHeight / 2;
             
-            // 找到Welcome元素的位置
-            let welcomeElement = null;
-            let welcomePosition = 0;
-            
-            allWordElements.forEach((element, index) => {
-                if (element.textContent === 'Welcome') {
-                    const rect = element.getBoundingClientRect();
-                    if (Math.abs(rect.top + rect.height/2 - screenCenter) < 30) {
-                        welcomeElement = element;
-                        welcomePosition = index;
+            // We get the index directly, so no more fragile searching logic.
+            // A simple check to ensure we received a valid index.
+            if (typeof welcomePosition === 'undefined' || welcomePosition < 0) {
+                console.error("Could not start disappear animation: Invalid 'Welcome' index provided.");
+                // As a fallback, try to find it manually, increasing tolerance.
+                const screenCenter = window.innerHeight / 2;
+                let found = false;
+                allWordElements.forEach((element, index) => {
+                    if (element.textContent === 'Welcome' && !found) {
+                        const rect = element.getBoundingClientRect();
+                        if (Math.abs(rect.top + rect.height/2 - screenCenter) < 50) { // Increased tolerance to 50px
+                            welcomePosition = index;
+                            found = true;
+                        }
                     }
+                });
+                
+                if (!found) {
+                    console.error("'Welcome' element could not be found, even with fallback. Halting.");
+                    return;
                 }
-            });
-            
-            if (!welcomeElement) {
-                console.log("'Welcome' element not found.");
-                return;
             }
             
-            console.log(`Found 'Welcome' element at index: ${welcomePosition}`);
+            console.log(`Animating with 'Welcome' element at index: ${welcomePosition}`);
             
             // 分别处理上方和下方的词汇，包括Welcome
             const animationDuration = 800; // 消失动画时长，更快
@@ -3070,7 +3073,7 @@
             console.log("Word disappear animation initiated.");
         }
 
-        // 显示新界面
+        // showNewInterface function
         function showNewInterface() {
             // 隐藏loading界面
             document.querySelector('.progress-container').style.display = 'none';
