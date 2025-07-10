@@ -3089,41 +3089,41 @@
             
             progressBar.style.width = '0%';
             
-            // Dynamically center 'Hi' on the screen initially
-            const screenCenter = window.innerHeight / 2;
-            const allWords = document.querySelectorAll('.word');
-            const hiIndex = words.indexOf("Hi");
+            // Defer positioning to allow the browser to render everything first.
+            // This is crucial for getting accurate coordinates on all platforms.
+            setTimeout(() => {
+                // Dynamically center 'Hi' on the screen initially
+                const screenCenter = window.innerHeight / 2;
+                const allWords = document.querySelectorAll('.word');
+                const hiIndex = words.indexOf("Hi");
 
-            if (allWords.length > hiIndex) {
-                const hiElement = allWords[hiIndex];
-                const hiRect = hiElement.getBoundingClientRect();
-                const hiCenter = hiRect.top + hiRect.height / 2;
+                if (allWords.length > hiIndex) {
+                    const hiElement = allWords[hiIndex];
+                    const hiRect = hiElement.getBoundingClientRect();
+                    const hiCenter = hiRect.top + hiRect.height / 2;
+                    
+                    // Calculate the offset needed to move 'Hi' to the screen center
+                    currentOffset = screenCenter - hiCenter;
+                    reel.style.transform = `translateY(${currentOffset}px)`;
+                    console.log(`Initialization complete. 'Hi' is centered. Calculated offset: ${currentOffset.toFixed(1)}`);
+                } else {
+                    console.error("'Hi' element not found for initial centering.");
+                }
                 
-                // Calculate the offset needed to move 'Hi' to the screen center
-                currentOffset = screenCenter - hiCenter;
-                reel.style.transform = `translateY(${currentOffset}px)`;
-                console.log(`Initialization complete. 'Hi' is centered. Calculated offset: ${currentOffset.toFixed(1)}`);
-            } else {
-                console.error("'Hi' element not found for initial centering.");
-            }
+                // After positioning is done, wait 0.5s then start scrolling.
+                setTimeout(() => {
+                    startScrolling();
+                }, 500);
+
+            }, 100); // A 100ms delay is usually sufficient for layout to settle.
+
             
-            // Wait 0.5s before starting the scroll
-            setTimeout(() => {
-                startScrolling();
-            }, 500);
-            
-            // Initialize scroll events after main animation starts
-            setTimeout(() => {
-                initScrollEvents();
-            }, 1000);
-            
-            // Initialize project filters
+            // Initialize non-visual components immediately.
+            initScrollEvents();
             initProjectFilters();
-            
-            // Initialize refresh button
             initRefreshButton();
         }
-        
+
         // showNewInterface function
         function showNewInterface() {
             // 隐藏loading界面
@@ -4182,56 +4182,6 @@
                     attributes: true 
                 });
             }
-        }
-
-        // 初始化
-        function init() {
-            console.log("Initialization started.");
-            createWords();
-            
-            // 重置进度条
-            progressBar.style.width = '0%';
-            
-            // 重新计算：让Hi精确位于透明窗口中心
-            const screenCenter = window.innerHeight / 2;
-            const wordHeight = 52;
-            
-            // Hi在词汇数组中的索引是6
-            const hiIndex = words.indexOf("Hi"); // 应该是6
-            
-            // 重新计算偏移量，让Hi的中心对齐到屏幕中心
-            // experience是索引2，Hi是索引6，需要向下移动滚轮
-            currentOffset = screenCenter - (hiIndex * wordHeight) - (wordHeight / 2);
-            
-            // 修正偏移量，确保Hi正好在透明窗口中心
-            currentOffset = currentOffset + 289; // 再次调整偏移量，让Hi完全居中
-            
-            reel.style.transform = `translateY(${currentOffset}px)`;
-            
-            console.log(`Screen center: ${screenCenter}, Word height: ${wordHeight}`);
-            console.log(`'Hi' index: ${hiIndex} (${words[hiIndex]}), Calculated offset: ${currentOffset}`);
-            console.log("Initialization complete. 'Hi' is centered. Waiting 0.5s to start scrolling.");
-            
-            // 调试：打印所有词汇的位置
-            console.log("Word list:", words);
-            console.log("'grateful' index:", words.indexOf("grateful"));
-            console.log("'Hi' index:", words.indexOf("Hi"));
-            
-            // 0.5秒后开始滚动
-            setTimeout(() => {
-                startScrolling();
-            }, 500);
-            
-            // 初始化滚动事件（在主动画开始后）
-            setTimeout(() => {
-                initScrollEvents();
-            }, 1000);
-            
-            // 初始化项目分类筛选
-            initProjectFilters();
-            
-            // 初始化刷新按钮
-            initRefreshButton();
         }
 
         // 页面加载完成后执行
