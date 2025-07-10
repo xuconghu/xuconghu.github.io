@@ -53,7 +53,8 @@
             flex-direction: column;
             align-items: center;
             transform: translateY(0);
-            transition: transform 0.1s linear;
+            transition: opacity 400ms ease-out; /* ONLY transition opacity */
+            opacity: 0; /* Initially hidden */
         }
 
         .word {
@@ -3092,6 +3093,9 @@
             // Defer positioning to allow the browser to render everything first.
             // This is crucial for getting accurate coordinates on all platforms.
             setTimeout(() => {
+                // Force disable any transition on the reel for instant positioning
+                reel.style.transition = 'none';
+
                 // Dynamically center 'Hi' on the screen initially
                 const screenCenter = window.innerHeight / 2;
                 const allWords = document.querySelectorAll('.word');
@@ -3105,7 +3109,16 @@
                     // Calculate the offset needed to move 'Hi' to the screen center
                     currentOffset = screenCenter - hiCenter;
                     reel.style.transform = `translateY(${currentOffset}px)`;
+
+                    // Force the browser to apply the transform change immediately
+                    reel.offsetHeight; 
+
+                    // Now that it's positioned, re-enable the opacity transition and fade it in
+                    reel.style.transition = 'opacity 400ms ease-out';
+                    reel.style.opacity = '1';
+
                     console.log(`Initialization complete. 'Hi' is centered. Calculated offset: ${currentOffset.toFixed(1)}`);
+                    
                 } else {
                     console.error("'Hi' element not found for initial centering.");
                 }
