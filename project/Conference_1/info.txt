@@ -1,0 +1,17 @@
+Title: The Uncanny Valley Effect and Induced Compensatory Consumption Behavior in Language Conditions
+Conference: Lecture Notes in Education Psychology and Public Media
+Author: Xucong Hu
+Abstract: With the gradually widespread use of personification marketing, there is the phenomenon with extensive attention, the uncanny valley effect, that people ' s familiarity 
+for robots decreases sharply with the increase of personification degree, further leading to compensatory consumption behavior based on the self-discrepancy theory and cause the 
+illusion of 'marketing success'. This paper theoretically explores the essence of violation expectations as the uncanny valley effect, and designs a simulation scene experiment in which subjects make consumption decisions in different personification situations in the 
+stimulation of language materials, so as to study the familiarity and compensatory consumption curves under different violation expectations. The results show that under the 
+stimulation of language conditions, there is a familiarity curve similar to the uncanny valley effect and complementary compensatory consumption curve, and the threshold is calculated 
+by fitting curve, within which the familiarity is the lowest and the compensatory consumption is the highest. The results provide empirical evidence to prove the violation of 
+expectation hypothesis, and prove that there is also the uncanny valley effect in the language channel, and the threshold provides guidance for the development of artificial 
+intelligence enterprises.
+
+Recomended Citation: 
+Hu,X. (2023). The Uncanny Valley Effect and Induced Compensatory Consumption Behavior in Language Conditions. Lecture Notes in Education Psychology and Public Media,4,434-444.
+
+Vedio link:
+https://www.youtube.com/watch?v=q06qOeipxnI

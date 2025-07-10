@@ -729,6 +729,7 @@
         .page-1.fade-out .bottom-info {
             opacity: 0;
             transition: opacity 600ms ease-out;
+            z-index: -1; /* 最终修复：将淡出元素层级降到最低，防止遮挡 */
         }
         
         /* 毛玻璃遮罩层 */
@@ -768,7 +769,7 @@
             color: white;
             padding: 40px 120px;
             gap: 100px;
-            z-index: 60;
+            z-index: 200; /* 提升层级，确保在所有透明覆盖层之上 */
             opacity: 0;
             transform: translateY(10px);
             transition: all 800ms ease-out;
@@ -1704,6 +1705,9 @@
             text-underline-offset: 2px;
             transition: all 0.3s ease;
             font-weight: inherit;
+            position: relative; /* 让其可设z-index */
+            z-index: 200; /* 确保链接位于任何透明覆盖层之上 */
+            pointer-events: auto; /* 明确允许点击 */
         }
 
         .profile-link:hover {
@@ -1754,7 +1758,7 @@
             
             .chinese-name-text {
                 font-size: 60px;
-                transform: translate(-20px, -10px);
+                transform: translate(-40px, -12.5px);
             }
             
             .page-2-content-text {
@@ -1865,8 +1869,8 @@
         }
 
         /* 第四页内容（Skills）样式 */
-                /* 第四页内容（Skills）样式 */
-                .page-4-content {
+        /* 第四页内容（Skills）样式 */
+        .page-4-content {
             position: fixed;
             top: 0;
             left: 0;
@@ -1935,7 +1939,7 @@
             flex-direction: column;
             overflow-y: auto;
         }
-        
+
         /* 美化滚动条 */
         .skills-pane-left::-webkit-scrollbar,
         .skills-pane-right::-webkit-scrollbar {
@@ -2016,7 +2020,7 @@
             opacity: 1;
             transform: translateY(0);
         }
-        
+
         .skill-item-new i {
             font-size: 3rem;
             color: #333F50;
@@ -2029,7 +2033,7 @@
             color: #555;
             transition: color 0.3s ease;
         }
-        
+
         .skill-item-new:hover i {
             transform: scale(1.1);
             color: #5B8DBE;
@@ -2115,8 +2119,8 @@
         .page-5-content.show {
             opacity: 1;
             pointer-events: auto;
-        }
-
+            }
+            
         .contact-container {
             position: relative;
             z-index: 2;
@@ -2126,29 +2130,29 @@
             opacity: 0;
             transform: translateY(20px);
             transition: opacity 0.8s ease-out 0.4s, transform 0.8s ease-out 0.4s;
-        }
-
+            }
+            
         .page-5-content.show .contact-container {
             opacity: 1;
             transform: translateY(0);
-        }
-
+            }
+            
         .contact-title {
             font-family: 'Montserrat', sans-serif;
             font-size: 3rem;
             font-weight: 900;
             margin-bottom: 20px;
-            letter-spacing: 2px;
-        }
-
+                letter-spacing: 2px;
+            }
+            
         .contact-subtitle {
             font-family: 'NTR', 'Arial', sans-serif;
             font-size: 1.1rem;
             line-height: 1.7;
             margin-bottom: 40px;
             color: #4a5a70;
-        }
-
+            }
+            
         .contact-email-link {
             display: inline-block;
             font-family: 'Orbitron', monospace;
@@ -2161,19 +2165,19 @@
             border-radius: 50px;
             transition: all 0.3s ease;
             margin-bottom: 60px;
-        }
-
+            }
+            
         .contact-email-link:hover {
             background: #333F50;
             color: white;
             transform: translateY(-3px) scale(1.02);
             box-shadow: 0 8px 20px rgba(51, 63, 80, 0.2);
-        }
-
+            }
+            
         .contact-footer {
             margin-top: 60px;
-        }
-
+            }
+            
         .back-to-top-btn {
             background: none;
             border: 1px solid #5a6a80;
@@ -2184,8 +2188,8 @@
             cursor: pointer;
             transition: all 0.3s ease;
             margin-bottom: 20px;
-        }
-
+            }
+            
         .back-to-top-btn:hover {
             background: #5a6a80;
             color: white;
@@ -2284,16 +2288,14 @@
                 <div class="chinese-name-container" id="chineseNameContainer">
                     <svg class="chinese-name-svg" viewBox="0 0 400 120" xmlns="http://www.w3.org/2000/svg">
                         <!-- Chinese Handwritten Signature -->
-                        <text class="chinese-name-text" x="170" y="70" text-anchor="middle" dominant-baseline="middle">胡许聪</text>
+                        <text class="chinese-name-text" x="200" y="60" text-anchor="middle" dominant-baseline="middle">胡许聪</text>
                     </svg>
                 </div>
             </div>
             
             <!-- Main Content -->
             <div class="page-2-content-text">
-                <p>Hi! I'm <strong>Xucong</strong>, a first-year master's student in <strong>Psychology</strong> at <strong>Zhejiang University</strong>, working in the Social Cognition Lab with Prof. <strong><a href="https://scholar.google.com.hk/citations?user=-Qf9-AgAAAAJ&hl=zh-CN&oi=ao" target="_blank" class="profile-link">Jifan Zhou</a></strong>. I'm on track to graduate in June 2027. Before starting my master's, I earned my B.Sc. in Psychology from <strong>Southwest University</strong> in Chongqing, China. During undergrad, I also worked as a research assistant in several labs at the <strong>Chinese Academy of Sciences</strong> and <strong>Tsinghua University</strong>, where I enjoyed turning curiosity into hands-on research.</p>
-                
-                <p>As a psychology student, my interests may be a bit unusual. Deeply influenced by Dr. <strong><a href="https://www.xuan-zhao.com/" target="_blank" class="profile-link">Xuan Zhao</a></strong>, I am particularly interested in <strong>Human-Robot Interaction (HRI)</strong>, with a focus on designing social robots that can collaborate as naturally as humans do. Grounded in human-specific social cognitive capacities—like <em>theory of mind</em>, <em>perspective-taking</em>, and <em>empathy</em>—I conduct <strong>user-centered research</strong> to explore how we can design robots that people easily believe can understand and interact with them. My goal is to offer <strong>design principles</strong> and create robots that <strong>bystanders can instantly understand and fall in love with</strong>.</p>
+                <p>Hi! I'm <strong>Xucong</strong>, a first-year master's student in <strong>Psychology</strong> at <strong>Zhejiang University</strong>, working in the Social Cognition Lab with Prof. <strong><a href="https://scholar.google.com.hk/citations?user=-Qf9-AgAAAAJ&hl=zh-CN&oi=ao" target="_blank" class="profile-link">Jifan Zhou</a></strong>. I'm on track to graduate in June 2027. Before starting my master's, I earned my B.Sc. in Psychology from <strong>Southwest University</strong> in Chongqing, China. During undergrad, I also worked as a research assistant in several labs at the <strong>Chinese Academy of Sciences</strong> and <strong>Tsinghua University</strong>, where I enjoyed turning curiosity into hands-on research.<br><br>As a psychology student, my interests may be a bit unusual. Deeply influenced by Dr. <strong><a href="https://www.xuan-zhao.com/" target="_blank" class="profile-link">Xuan Zhao</a></strong>, I am particularly interested in <strong>Human-Robot Interaction (HRI)</strong>, with a focus on designing social robots that can collaborate as naturally as humans do. Grounded in human-specific social cognitive capacities—like <em>theory of mind</em>, <em>perspective-taking</em>, and <em>empathy</em>—I conduct <strong>user-centered research</strong> to explore how we can design robots that people easily believe can understand and interact with them. My goal is to offer <strong>design principles</strong> and create robots that <strong>bystanders can instantly understand and fall in love with</strong>.</p>
                 
                 <p>By the way, I am also a heavy <strong>sci-fi enthusiast</strong>. I love franchises like <em>Star Wars</em>, <em>Alien</em>, <em>Gundam</em>, and I enjoy building LEGO and Bandai Gundam models in my spare time. I also enjoy <strong>singing</strong>—anything from pop to hip-hop—and I'm a <strong>gamer</strong> at heart, with some of my happiest hours spent climbing ranks in <em>Valorant</em>, <em>League of Legends</em>, and <em>Teamfight Tactics</em>.</p>
             </div>
@@ -2494,7 +2496,24 @@
                         </div>
                     </div>
                 </div>
-
+             <!-- Project Card 8- Conference 1 -->
+            <div class="project-card" data-category="published" data-project="conference-1">
+                <div class="project-image-container">
+                    <img src="project/Conference_1/Lecture Notes in Education Psychology and Public Media.jpg" alt="Uncanny Valley Research" class="project-image">
+                    <div class="project-hover-info">
+                        <div class="project-title">The Uncanny Valley Effect and Induced Compensatory Consumption Behavior in Language Conditions</div>
+                        <div class="project-tags">
+                            <span class="project-tag">#Conference Paper</span>
+                            <span class="project-tag">#2023</span>
+                        </div>
+                    </div>
+                    <div class="expand-icon" onclick="openProjectModal('conference-1')">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15 3h6v6M14 10l6.1-6.1M9 21H3v-6M10 14l-6.1 6.1"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
             </div>
         </div>
     </div>
@@ -2528,9 +2547,9 @@
                     <div class="skill-item-new"><i class="devicon-photoshop-plain"></i><span>Photoshop</span></div>
                     <div class="skill-item-new"><i class="devicon-figma-plain"></i><span>Figma</span></div>
                     <div class="skill-item-new"><i class="devicon-unity-original"></i><span>Unity</span></div>
-                </div>
-            </div>
-
+                            </div>
+                        </div>
+                        
             <!-- Right Pane for Text -->
             <div class="skills-pane-right">
                 <h2 class="skills-pane-title">Specialized Methods</h2>
@@ -2538,20 +2557,20 @@
                     <div class="skill-text-category">
                         <h3>Statistics</h3>
                         <p>SPSS, Mplus, Bayesian Modeling, Factor Analysis, Structural Equation Modeling, and libraries like <strong>statsmodels</strong>, <strong>scipy</strong>, <strong>PyMC</strong>.</p>
-                    </div>
+                                        </div>
                     <div class="skill-text-category">
                         <h3>Machine Learning</h3>
                         <p>Reinforcement Learning (Q-learning), and libraries such as <strong>scikit-learn</strong>, <strong>XGBoost</strong>, and <strong>SHAP</strong>.</p>
-                    </div>
+                                    </div>
                     <div class="skill-text-category">
                         <h3>Robotics</h3>
                         <p>Currently learning ROS (Robot Operating System) for robot application development.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
     <!-- Page 5 Content (Contact) -->
     <div class="page-5-content" id="page5Content">
         <div class="contact-container">
@@ -2562,10 +2581,10 @@
             <div class="contact-footer">
                 <button class="back-to-top-btn" id="backToTopBtn">Back to Top</button>
                 <p class="copyright-footer">© Xucong Hu 2025</p>
-            </div>
-        </div>
-    </div>
-
+                                </div>
+                            </div>
+                        </div>
+                        
     <!-- Project Details Modal -->
     <div class="project-modal" id="projectModal">
         <div class="modal-content">
@@ -2588,6 +2607,9 @@
                 </div>
             </div>
             <div class="modal-body">
+                <div id="modal-video-container" style="display: none; position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; margin-bottom: 20px; border-radius: 15px;">
+                    <iframe id="modal-video-iframe" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
                 <button class="download-btn" id="modalDownload">Download Paper</button>
                 <img class="modal-image" id="modalImage" src="project/cognition/cognition.jpg" alt="R2-D2 Perspective-Taking Research Image">
                 <div class="modal-abstract">
@@ -2706,7 +2728,20 @@
                 scholarQuery: '',
                 fallbackCitations: 0,
                 status: 'under-submission'
-            }
+            },
+            'conference-1': {
+                title: 'The Uncanny Valley Effect and Induced Compensatory Consumption Behavior in Language Conditions',
+                authors: 'Xucong Hu',
+                conference: '#CONFERENCE',
+                year: '#Lecture Notes in Education Psychology and Public Media 2023',
+                abstract: 'With the gradually widespread use of personification marketing, there is the phenomenon with extensive attention, the uncanny valley effect, that people ‘s familiarity for robots decreases sharply with the increase of personification degree, further leading to compensatory consumption behavior based on the self-discrepancy theory and cause the illusion of ‘marketing success’. This paper theoretically explores the essence of violation expectations as the uncanny valley effect, and designs a simulation scene experiment in which subjects make consumption decisions in different personification situations in the stimulation of language materials, so as to study the familiarity and compensatory consumption curves under different violation expectations. The results show that under the stimulation of language conditions, there is a familiarity curve similar to the uncanny valley effect and complementary compensatory consumption curve, and the threshold is calculated by fitting curve, within which the familiarity is the lowest and the compensatory consumption is the highest. The results provide empirical evidence to prove the violation of expectation hypothesis, and prove that there is also the uncanny valley effect in the language channel, and the threshold provides guidance for the development of artificial intelligence enterprises.',
+                citation: 'Hu,X. (2023). The Uncanny Valley Effect and Induced Compensatory Consumption Behavior in Language Conditions. Lecture Notes in Education Psychology and Public Media,4,434-444.',
+                downloadLink: 'project/Conference_1/The uncanny valley effect and induced compensatory consumption behavior in language.pdf',
+                image: 'project/Conference_1/Lecture Notes in Education Psychology and Public Media.jpg',
+                youtubeId: 'q06qOeipxnI',
+                scholarQuery: 'The Uncanny Valley Effect and Induced Compensatory Consumption Behavior in Language Conditions',
+                fallbackCitations: 0
+                },
         };
 
         // 获取引用量的函数
@@ -2765,120 +2800,109 @@
             }
         }
 
-        // 打开项目模态框
-        function openProjectModal(projectId) {
-            const project = projectData[projectId];
-            if (!project) return;
+    // 打开项目模态框
+    function openProjectModal(projectId) {
+        const project = projectData[projectId];
+        if (!project) return;
 
-            // 判断是否为Under Review项目
-            const isUnderReview = projectId.startsWith('submitted-');
+        const modal = document.getElementById('projectModal');
+        const modalTitle = document.getElementById('modalTitle');
+        const modalAuthors = document.getElementById('modalAuthors');
+        const modalConference = document.getElementById('modalConference');
+        const modalYear = document.getElementById('modalYear');
+        const modalAbstract = document.getElementById('modalAbstract');
+        const modalCitation = document.getElementById('modalCitation');
+        const modalDownload = document.getElementById('modalDownload');
+        const modalImage = document.getElementById('modalImage');
+        const modalVideoContainer = document.getElementById('modal-video-container');
+        const modalVideoIframe = document.getElementById('modal-video-iframe');
 
-            // 更新模态框内容
-            document.getElementById('modalTitle').textContent = project.title;
+        // 更新通用内容
+        modalTitle.textContent = project.title;
+        const highlightedAuthors = project.authors.replace(/Xucong Hu/g, '<span class="highlight-author">Xucong Hu</span>');
+        modalAuthors.innerHTML = highlightedAuthors;
+        
+        const isUnderReview = project.status === 'submitted' || project.status === 'under-submission';
+
+        // 根据项目类型（youtubeId, under-review, or normal）配置显示
+        if (project.youtubeId) {
+            modalVideoContainer.style.display = 'block';
+            modalVideoIframe.src = `https://www.youtube.com/embed/${project.youtubeId}`;
+            modalImage.style.display = 'none';
+        } else {
+            modalVideoContainer.style.display = 'none';
+            modalVideoIframe.src = '';
+            modalImage.style.display = 'block';
+            modalImage.src = project.image;
+        }
+
+        if (isUnderReview) {
+            const statusLabel = project.status === 'under-submission' ? '#Under Submission' : '#Submitted';
+            modalConference.textContent = statusLabel;
+            modalYear.textContent = project.year;
+            document.querySelector('.modal-abstract').style.display = 'none';
+            document.querySelector('.citation-section').style.display = 'none';
+            document.querySelector('.modal-citations').style.display = 'none';
+            modalDownload.style.display = 'none';
+        } else {
+            modalConference.textContent = project.conference;
+            modalYear.textContent = project.year;
+            modalAbstract.textContent = project.abstract;
+            modalCitation.textContent = project.citation;
+            document.querySelector('.modal-abstract').style.display = 'block';
+            document.querySelector('.citation-section').style.display = 'block';
+            document.querySelector('.modal-citations').style.display = 'block';
             
-            // 高亮作者名字
-            const authorsElement = document.getElementById('modalAuthors');
-            const highlightedAuthors = project.authors.replace(
-                /Xucong Hu/g, 
-                '<span class="highlight-author">Xucong Hu</span>'
-            );
-            authorsElement.innerHTML = highlightedAuthors;
-            
-            // 对于Under Review项目，根据状态显示不同标签
-            if (isUnderReview) {
-                const statusLabel = project.status === 'under-submission' ? '#Under Submission' : '#Submitted';
-                document.getElementById('modalConference').textContent = statusLabel;
-                document.getElementById('modalYear').textContent = project.year;
-                
-                // 隐藏摘要和citation部分
-                const abstractSection = document.querySelector('.modal-abstract');
-                const citationSection = document.querySelector('.citation-section');
-                const citationsDiv = document.querySelector('.modal-citations');
-                
-                if (abstractSection) abstractSection.style.display = 'none';
-                if (citationSection) citationSection.style.display = 'none';
-                if (citationsDiv) citationsDiv.style.display = 'none';
+            if (project.downloadLink && project.downloadLink !== '#') {
+                modalDownload.style.display = 'block';
+                modalDownload.onclick = () => window.open(project.downloadLink, '_blank');
             } else {
-                document.getElementById('modalConference').textContent = project.conference;
-                document.getElementById('modalYear').textContent = project.year;
-                document.getElementById('modalAbstract').textContent = project.abstract;
-                document.getElementById('modalCitation').textContent = project.citation;
-                
-                // 显示摘要和citation部分
-                const abstractSection = document.querySelector('.modal-abstract');
-                const citationSection = document.querySelector('.citation-section');
-                const citationsDiv = document.querySelector('.modal-citations');
-                
-                if (abstractSection) abstractSection.style.display = 'block';
-                if (citationSection) citationSection.style.display = 'block';
-                if (citationsDiv) citationsDiv.style.display = 'block';
-                
-                // 重置引用量显示并开始获取
-                document.getElementById('modalCitationsCount').textContent = 'Loading...';
-                fetchCitationCount(project.scholarQuery, project.fallbackCitations);
+                modalDownload.style.display = 'none';
             }
             
-            document.getElementById('modalImage').src = project.image;
-            
-            // 设置下载链接
-            const downloadBtn = document.getElementById('modalDownload');
-            if (isUnderReview) {
-                downloadBtn.style.display = 'none'; // 隐藏下载按钮
-            } else {
-                downloadBtn.style.display = 'block';
-                downloadBtn.onclick = () => window.open(project.downloadLink, '_blank');
-            }
+            document.getElementById('modalCitationsCount').textContent = 'Loading...';
+            fetchCitationCount(project.scholarQuery, project.fallbackCitations);
+        }
 
-            // 显示模态框带动画
-            const modal = document.getElementById('projectModal');
+        // 显示模态框
+        modal.classList.remove('hide');
+        modal.style.display = 'flex';
+        document.body.style.overflow = 'hidden';
+        setTimeout(() => modal.classList.add('show'), 10);
+        
+        const modalContent = modal.querySelector('.modal-content');
+        modalContent.addEventListener('wheel', e => e.stopPropagation(), { passive: false });
+        modalContent.addEventListener('touchmove', e => e.stopPropagation(), { passive: false });
+    }
+
+    // 关闭项目模态框
+    function closeProjectModal() {
+        const modal = document.getElementById('projectModal');
+        const modalVideoIframe = document.getElementById('modal-video-iframe');
+        
+        if (modalVideoIframe) {
+            modalVideoIframe.src = ''; // 停止播放
+        }
+
+        modal.classList.remove('show');
+        modal.classList.add('hide');
+        
+        setTimeout(() => {
+            modal.style.display = 'none';
             modal.classList.remove('hide');
-            modal.style.display = 'flex';
-            document.body.style.overflow = 'hidden';
+            document.body.style.overflow = 'auto';
             
-            // 触发动画
+            const modalHeader = modal.querySelector('.modal-header');
+            const modalBody = modal.querySelector('.modal-body');
+            if (modalHeader) modalHeader.style.animation = 'none';
+            if (modalBody) modalBody.style.animation = 'none';
+            
             setTimeout(() => {
-                modal.classList.add('show');
-            }, 10);
-            
-            // 阻止模态框内的滚动事件冒泡到外部页面
-            const modalContent = document.querySelector('.modal-content');
-            modalContent.addEventListener('wheel', function(e) {
-                e.stopPropagation();
-            }, { passive: false });
-            
-            // 阻止模态框内的滚动事件冒泡到外部页面（移动端）
-            modalContent.addEventListener('touchmove', function(e) {
-                e.stopPropagation();
-            }, { passive: false });
-        }
-
-        // 关闭项目模态框
-        function closeProjectModal() {
-            const modal = document.getElementById('projectModal');
-            
-            // 触发关闭动画
-            modal.classList.remove('show');
-            modal.classList.add('hide');
-            
-            // 动画完成后真正隐藏模态框
-            setTimeout(() => {
-                modal.style.display = 'none';
-                modal.classList.remove('hide');
-                document.body.style.overflow = 'auto';
-                
-                // 重置内容动画，为下次打开做准备
-                const modalHeader = modal.querySelector('.modal-header');
-                const modalBody = modal.querySelector('.modal-body');
-                modalHeader.style.animation = 'none';
-                modalBody.style.animation = 'none';
-                
-                // 重新启用动画
-                setTimeout(() => {
-                    modalHeader.style.animation = '';
-                    modalBody.style.animation = '';
-                }, 50);
-            }, 300);
-        }
+                if (modalHeader) modalHeader.style.animation = '';
+                if (modalBody) modalBody.style.animation = '';
+            }, 50);
+        }, 300);
+    }
 
         // 点击模态框背景关闭
         document.getElementById('projectModal').addEventListener('click', function(e) {
@@ -2931,7 +2955,7 @@
         function startScrolling() {
             console.log("Scrolling started.");
             let count = 0;
-
+            
             const allWords = document.querySelectorAll('.word');
             if (allWords.length === 0) {
                 console.error("No words found to scroll.");
@@ -3025,25 +3049,25 @@
                 console.error(`Could not start animation: Invalid 'Welcome' index (${welcomePosition}). Attempting fallback.`);
                 
                 // Fallback: Find 'Welcome' near the center of the screen
-                const screenCenter = window.innerHeight / 2;
+            const screenCenter = window.innerHeight / 2;
                 let found = false;
-                allWordElements.forEach((element, index) => {
+            allWordElements.forEach((element, index) => {
                     if (element.textContent === 'Welcome' && !found) {
-                        const rect = element.getBoundingClientRect();
+                    const rect = element.getBoundingClientRect();
                         // Check if the element's center is within a generous 50px range of the screen center
                         if (Math.abs(rect.top + rect.height / 2 - screenCenter) < 50) { 
-                            welcomePosition = index;
+                        welcomePosition = index;
                             found = true;
                             console.log(`Fallback successful: Found 'Welcome' at index ${welcomePosition} visually.`);
-                        }
                     }
-                });
-                
+                }
+            });
+            
                 if (!found) {
                     console.error("Fallback failed: 'Welcome' element could not be found. Halting animation.");
                     // To prevent getting stuck, we could force the transition to the next stage.
-                    return;
-                }
+                return;
+            }
             }
             
             console.log(`Animation will proceed with 'Welcome' at index: ${welcomePosition}`);
@@ -3082,7 +3106,7 @@
             
             console.log("Word disappear animation initiated.");
         }
-        
+
         // Initialization
         function init() {
             console.log("Initialization started.");
@@ -3657,7 +3681,7 @@
                 }, 600);
                 
                 currentPage = 5;
-
+                
                 // 1.5秒后允许下次切换
                 setTimeout(() => {
                     isTransitioning = false;
@@ -3769,7 +3793,7 @@
             // 先重置所有项目的状态
             iconItems.forEach(item => item.classList.remove('visible'));
             textItems.forEach(item => item.classList.remove('visible'));
-
+                
             // 动画1：逐个显示左侧图标
             iconItems.forEach((item, index) => {
                 const delay = index * 80; // 每个图标的延迟
@@ -3784,7 +3808,7 @@
 
             textItems.forEach((item, index) => {
                 const delay = index * 150; // 每行文字的延迟
-                setTimeout(() => {
+                    setTimeout(() => {
                     item.classList.add('visible');
                 }, rightAnimationDelay + delay);
             });
