@@ -162,6 +162,7 @@ redirect_from:
         <div class="title">RoSIP: A Scale for Measuring Appearance-Based Social Interaction Potential in Robots</div>
         <div class="authors"><strong>Hu, X.</strong>, Hu, Q., Yu, T., Shen, M., & Zhou, J.</div>
         <div class="publish">The 2026 ACM/IEEE International Conference on Human-Robot Interaction Late-Breaking Reports (Edinburgh, UK) <span class="publish-icon" aria-hidden="true"><i class="fas fa-map-marker-alt"></i></span></div>
+        <div class="tags">[<a class="tag" href="https://xuconghu.github.io/ABOT2.0/" target="_blank" rel="noopener">Website</a>]</div>
       </div>
     </div>
     <div class="pub">
