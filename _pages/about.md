@@ -61,6 +61,10 @@ redirect_from:
   </div>
   <ul class="news-list">
     <li class="news-item">
+      <span class="news-date">2026.02</span>
+      <span class="news-text">🎉🎉🎉 Our paper "I'll Believe It Unless It's Too Absurd: Spontaneous Visual Perspective-Taking as Prior-Based Heuristic Inference" has been accepted by <em>Cognition</em>.</span>
+    </li>
+    <li class="news-item">
       <span class="news-date">2026.01</span>
       <span class="news-text">📄 Our paper "Simulated Annealing Enhances Theory-of-Mind Reasoning in Autoregressive Language Models" is now available as a preprint on <a href="https://arxiv.org/abs/2601.12269" target="_blank" rel="noopener"><em>arXiv</em></a>.</span>
     </li>
@@ -101,6 +105,17 @@ redirect_from:
 <div class="publications">
   <h2><i class="fas fa-fw fa-book-open section-icon" aria-hidden="true"></i>Journal Articles</h2>
   <div class="pub-list">
+    <div class="pub pub--wide-cover">
+      <div class="pub-left">
+        <img class="pub-cover" src="{{ "/info/Under_Review/I%27ll%20Believe%20It%20Unless.svg" | relative_url }}" alt="I'll Believe It Unless cover" />
+        <div class="pub-badge">2026</div>
+      </div>
+      <div class="pub-right">
+        <div class="title">I'll Believe It Unless It's Too Absurd: Spontaneous Visual Perspective-Taking as Prior-Based Heuristic Inference</div>
+        <div class="authors"><strong>Hu, X.</strong>, Zheng, Y., Hu, Q., Chen, H., Shen, M., & Zhou, J.</div>
+        <div class="publish">Cognition (In Press)</div>
+      </div>
+    </div>
     <div class="pub pub--wide-cover">
       <div class="pub-left">
         <div class="pub-cover pub-cover-cycle" role="img" aria-label="Cognition cover" style="--cycle-1: url('{{ "/info/cognition/cognition_1.GIF" | relative_url }}'); --cycle-2: url('{{ "/info/cognition/cognition_2.GIF" | relative_url }}'); --cycle-3: url('{{ "/info/cognition/cognition_3.GIF" | relative_url }}');"></div>
@@ -209,16 +224,6 @@ redirect_from:
       </div>
       <div class="pub-right">
         <div class="title">Causal Relationship Between Robot Perception and Behavior: A User-Centered Explainability Approach</div>
-        <div class="authors"><strong>Hu, X.</strong>, et al.</div>
-      </div>
-    </div>
-    <div class="pub">
-      <div class="pub-left">
-        <img class="pub-cover" src="{{ "/info/Under_Review/I%27ll%20Believe%20It%20Unless.svg" | relative_url }}" alt="I'll Believe It Unless cover" />
-        <div class="pub-badge">2025</div>
-      </div>
-      <div class="pub-right">
-        <div class="title">I'll Believe It Unless It's Too Absurd: Spontaneous Visual Perspective-Taking as Prior-Based Heuristic Inference</div>
         <div class="authors"><strong>Hu, X.</strong>, et al.</div>
       </div>
     </div>
