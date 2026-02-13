@@ -10,7 +10,7 @@ author_profile: true
 
 - **[Feb 2026]** Our paper "How Can We Make Robots Intelligible? Building Perception--Behaviour Causal Links for User-Centered Explainability" has been accepted by *International Journal of Human-Computer Interaction*.
 
-- **[Feb 2026]** Our work "I'll Believe It Unless It's Too Absurd: Spontaneous Visual Perspective-Taking as Prior-Based Heuristic Inference" has been accepted for poster presentation at *Vision Sciences Society (VSS 2026)* in St. Pete Beach, FL.
+- **[Feb 2026]** Our work "I'll Believe It Unless It's Too Absurd: Spontaneous Visual Perspective-Taking as Prior-Based Heuristic Inference" has been accepted for poster presentation at *Vision Sciences Society (VSS 2026)*. See you in St. Pete Beach in May!
 
 - **[Jan 2026]** Our paper "Simulated Annealing Enhances Theory-of-Mind Reasoning in Autoregressive Language Models" is now available as a preprint on [*arXiv*](https://arxiv.org/abs/2601.12269).
 
