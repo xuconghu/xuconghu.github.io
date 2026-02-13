@@ -18,7 +18,19 @@ author_profile: true
       <div class="pub-right">
         <div class="title">I'll Believe It Unless It's Too Absurd: Spontaneous Visual Perspective-Taking as Prior-Based Heuristic Inference</div>
         <div class="authors"><strong>Hu, X.</strong>, Zheng, Y., Hu, Q., Chen, H., Shen, M., & Zhou, J.</div>
-        <div class="publish">Cognition (In Press)</div>
+        <div class="publish">Cognition, 271, 106478</div>
+        <div class="tags">[<a class="tag" href="{{ "/info/cognition_2026/I'll%20believe%20it%20unless%20it's%20too%20absurd%20Spontaneous%20visual%20perspective-taking%20as%20.pdf" | relative_url }}">Paper</a>]</div>
+      </div>
+    </div>
+    <div class="pub">
+      <div class="pub-left">
+        <img class="pub-cover" src="{{ "/info/Under_Review/Causal%20Relationship%20Between%20Robot.png" | relative_url }}" alt="Robot Explainability cover" />
+        <div class="pub-badge">In Press</div>
+      </div>
+      <div class="pub-right">
+        <div class="title">How Can We Make Robots Intelligible? Building Perception--Behaviour Causal Links for User-Centered Explainability</div>
+        <div class="authors"><strong>Hu, X.</strong>, Xu, E., Xu, H., Shen, M., & Zhou, J.</div>
+        <div class="publish">International Journal of Human-Computer Interaction (In Press)</div>
       </div>
     </div>
     <div class="pub pub--wide-cover">
@@ -75,6 +87,18 @@ author_profile: true
   <div class="pub-list">
     <div class="pub">
       <div class="pub-left">
+        <img class="pub-cover" src="{{ "/info/Under_Review/I%27ll%20Believe%20It%20Unless.svg" | relative_url }}" alt="VSS 2026 cover" />
+        <div class="pub-badge">2026</div>
+      </div>
+      <div class="pub-right">
+        <div class="title">I'll Believe It Unless It's Too Absurd: Spontaneous Visual Perspective-Taking as Prior-Based Heuristic Inference</div>
+        <div class="authors"><strong>Hu, X.</strong>, Zheng, Y., Hu, Q., Chen, H., Shen, M., & Zhou, J.</div>
+        <div class="publish">Annual Meeting of the Vision Sciences Society (VSS 2026) (Poster, St. Pete Beach, FL, USA) <span class="publish-icon" aria-hidden="true"><i class="fas fa-map-marker-alt"></i></span></div>
+        <div class="tags"><span class="tag-note">Early version of Cognition 2026 article</span></div>
+      </div>
+    </div>
+    <div class="pub">
+      <div class="pub-left">
         <img class="pub-cover" src="{{ "/info/Conference_Papers/Spontaneous%20perspective-taking%20toward.jpg" | relative_url }}" alt="Spontaneous perspective-taking cover" />
         <div class="pub-badge">2024</div>
       </div>
@@ -108,16 +132,6 @@ author_profile: true
       <div class="pub-right">
         <div class="title">Seeing through Janus' Eyes: How Humans Spontaneously Adopt Multiple Perspectives of Robot Avatars</div>
         <div class="authors"><strong>Hu, X.</strong>, Xu, H., Chen, H., Shen, M., & Zhou, J.</div>
-      </div>
-    </div>
-    <div class="pub">
-      <div class="pub-left">
-        <img class="pub-cover" src="{{ "/info/Under_Review/Causal%20Relationship%20Between%20Robot.png" | relative_url }}" alt="Causal Relationship Between Robot cover" />
-        <div class="pub-badge">2025</div>
-      </div>
-      <div class="pub-right">
-        <div class="title">Causal Relationship Between Robot Perception and Behavior: A User-Centered Explainability Approach</div>
-        <div class="authors"><strong>Hu, X.</strong>, Xu, E., Xu, H., Shen, M., & Zhou, J.</div>
       </div>
     </div>
     <div class="pub">

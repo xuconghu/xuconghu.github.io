@@ -37,11 +37,13 @@ B.S. in Psychology | Sep. 2020 - Jun. 2024
 
 ## Selected Publications
 
-1. **Hu, X.**, Xu, H., Chen, H., Shen, M., & Zhou, J. (2025). Good to see you R2-D2: Inducing spontaneous perspective-taking towards non-human agents through human-like gaze and reach. *Cognition*, 259, 106101.
+1. **Hu, X.**, Zheng, Y., Hu, Q., Chen, H., Shen, M., & Zhou, J. (2026). I'll believe it unless it's too absurd: Spontaneous visual perspective-taking as prior-based heuristic inference. *Cognition*, 271, 106478.
 
-2. Zhao, Y., **Hu, X.**, Zhou, J., Shen, M., & Xu, H. (2025). Enhancement of joint flanker effect in intergroup competition. *PsyCh Journal*, 14(1), 94–102.
+2. **Hu, X.**, Xu, H., Chen, H., Shen, M., & Zhou, J. (2025). Good to see you R2-D2: Inducing spontaneous perspective-taking towards non-human agents through human-like gaze and reach. *Cognition*, 259, 106101.
 
-3. **Hu, X.**, & Tong, S. (2023). Effects of robot animacy and emotional expressions on perspective-taking abilities. *Behavioral Sciences*, 13(9), 728.
+3. Zhao, Y., **Hu, X.**, Zhou, J., Shen, M., & Xu, H. (2025). Enhancement of joint flanker effect in intergroup competition. *PsyCh Journal*, 14(1), 94–102.
+
+4. **Hu, X.**, & Tong, S. (2023). Effects of robot animacy and emotional expressions on perspective-taking abilities. *Behavioral Sciences*, 13(9), 728.
 
 ---
 
