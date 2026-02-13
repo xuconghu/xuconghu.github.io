@@ -62,7 +62,15 @@ redirect_from:
   <ul class="news-list">
     <li class="news-item">
       <span class="news-date">2026.02</span>
-      <span class="news-text">🎉🎉🎉 Our paper "I'll Believe It Unless It's Too Absurd: Spontaneous Visual Perspective-Taking as Prior-Based Heuristic Inference" has been accepted by <em>Cognition</em>.</span>
+      <span class="news-text">🎉🎉🎉 Our work "I'll Believe It Unless It's Too Absurd: Spontaneous Visual Perspective-Taking as Prior-Based Heuristic Inference" has been accepted for poster presentation at <em>Vision Sciences Society (VSS 2026)</em>. See you in St. Pete Beach in May!</span>
+    </li>
+    <li class="news-item">
+      <span class="news-date">2026.02</span>
+      <span class="news-text">🎉🎉🎉 Our paper "I'll Believe It Unless It's Too Absurd: Spontaneous Visual Perspective-Taking as Prior-Based Heuristic Inference" has been published in <em>Cognition</em> (271, 106478).</span>
+    </li>
+    <li class="news-item">
+      <span class="news-date">2026.02</span>
+      <span class="news-text">🎉🎉🎉 Our paper "How Can We Make Robots Intelligible? Building Perception--Behaviour Causal Links for User-Centered Explainability" has been accepted by <em>International Journal of Human-Computer Interaction</em>.</span>
     </li>
     <li class="news-item">
       <span class="news-date">2026.01</span>
