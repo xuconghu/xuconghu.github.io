@@ -66,7 +66,7 @@ redirect_from:
     </li>
     <li class="news-item">
       <span class="news-date">2026.02</span>
-      <span class="news-text">🎉🎉🎉 Our paper "I'll Believe It Unless It's Too Absurd: Spontaneous Visual Perspective-Taking as Prior-Based Heuristic Inference" has been published in <em>Cognition</em> (271, 106478).</span>
+      <span class="news-text">🎉🎉🎉 Our paper "I'll Believe It Unless It's Too Absurd: Spontaneous Visual Perspective-Taking as Prior-Based Heuristic Inference" has been published in <em>Cognition</em>.</span>
     </li>
     <li class="news-item">
       <span class="news-date">2026.02</span>
