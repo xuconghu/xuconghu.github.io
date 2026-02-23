@@ -94,7 +94,7 @@ author_profile: true
         <div class="title">I'll Believe It Unless It's Too Absurd: Spontaneous Visual Perspective-Taking as Prior-Based Heuristic Inference</div>
         <div class="authors"><strong>Hu, X.</strong>, Zheng, Y., Hu, Q., Chen, H., Shen, M., & Zhou, J.</div>
         <div class="publish">Annual Meeting of the Vision Sciences Society (VSS 2026) (Poster, St. Pete Beach, FL, USA) <span class="publish-icon" aria-hidden="true"><i class="fas fa-map-marker-alt"></i></span></div>
-        <div class="tags"><span class="tag-note">Early version of <a href="#cognition-2026" style="color: inherit; text-decoration: underline;">Cognition 2026 article</a></span></div>
+        <div class="tags">[<a class="tag" href="{{ "/VSS_poster.pdf" | relative_url }}">Poster</a>] <span class="tag-note">Early version of <a href="#cognition-2026" style="color: inherit; text-decoration: underline;">Cognition 2026 article</a></span></div>
       </div>
     </div>
     <div class="pub">
