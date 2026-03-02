@@ -70,7 +70,7 @@ redirect_from:
     </li>
     <li class="news-item">
       <span class="news-date">2026.02</span>
-      <span class="news-text">🎉🎉🎉 Our paper "How Can We Make Robots Intelligible? Building Perception--Behaviour Causal Links for User-Centered Explainability" has been accepted by <em>International Journal of Human-Computer Interaction</em>.</span>
+      <span class="news-text">🎉🎉🎉 Our paper "How Can We Make Robots Intelligible? Building Perception-Behavior Causal Links for User-Centered Explainability" has been published in <em>International Journal of Human–Computer Interaction</em>.</span>
     </li>
     <li class="news-item">
       <span class="news-date">2026.01</span>
@@ -128,12 +128,13 @@ redirect_from:
     <div class="pub">
       <div class="pub-left">
         <img class="pub-cover" src="{{ "/info/Under_Review/Causal%20Relationship%20Between%20Robot.png" | relative_url }}" alt="Robot Explainability cover" />
-        <div class="pub-badge">In Press</div>
+        <div class="pub-badge">2026</div>
       </div>
       <div class="pub-right">
-        <div class="title">How Can We Make Robots Intelligible? Building Perception--Behaviour Causal Links for User-Centered Explainability</div>
+        <div class="title">How Can We Make Robots Intelligible? Building Perception-Behavior Causal Links for User-Centered Explainability</div>
         <div class="authors"><strong>Hu, X.</strong>, Xu, E., Xu, H., Shen, M., & Zhou, J.</div>
-        <div class="publish">International Journal of Human-Computer Interaction (In Press)</div>
+        <div class="publish">International Journal of Human–Computer Interaction, 1–16. <a href="https://doi.org/10.1080/10447318.2026.2633220" target="_blank" rel="noopener">https://doi.org/10.1080/10447318.2026.2633220</a></div>
+        <div class="tags">[<a class="tag" href="{{ "/info/IJHCI/How%20Can%20We%20Make%20Robots%20Intelligible%20Building%20Perception-Behavior%20Causal%20Links%20for%20User-Centered%20Explainability.pdf" | relative_url }}">Paper</a>]</div>
       </div>
     </div>
     <div class="pub pub--wide-cover">
