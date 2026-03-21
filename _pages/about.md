@@ -65,7 +65,7 @@ redirect_from:
   <ul class="news-list">
     <li class="news-item">
       <span class="news-date">2026.03</span>
-      <span class="news-text">🏅 Our paper "RoSIP: A Scale for Measuring Appearance-Based Social Interaction Potential in Robots" received <strong>Best Paper Honorable Mention</strong> at <em>HRI 2026</em>!</span>
+      <span class="news-text">🏅 Our paper "RoSIP: A Scale for Measuring Appearance-Based Social Interaction Potential in Robots" received <strong>Honorable Mention</strong> (10/224) at <em>HRI 2026</em>!</span>
       <div class="news-media">
         <img src="{{ "/info/news/lbr-honourable-hu-rosip.png" | relative_url }}" alt="RoSIP Best Paper Honorable Mention – HRI 2026" />
       </div>
@@ -220,7 +220,7 @@ redirect_from:
         <div class="title">RoSIP: A Scale for Measuring Appearance-Based Social Interaction Potential in Robots</div>
         <div class="authors"><strong>Hu, X.</strong>, Hu, Q., Yu, T., Shen, M., & Zhou, J.</div>
         <div class="publish">The 2026 ACM/IEEE International Conference on Human-Robot Interaction Late-Breaking Reports (Edinburgh, UK) <span class="publish-icon" aria-hidden="true"><i class="fas fa-map-marker-alt"></i></span></div>
-        <div class="publish"><span class="badge-honor"><i class="fas fa-medal" aria-hidden="true"></i> Best Paper Honorable Mention</span></div>
+        <div class="publish"><span class="badge-honor"><i class="fas fa-medal" aria-hidden="true"></i> Honorable Mention</span></div>
         <div class="tags">[<a class="tag" href="{{ "/info/Under_Review/RoSIP__A_Scale_for_Measuring_Appearance_Based_Social_Interaction_Potential_in_Robots.pdf" | relative_url }}">Paper</a>] [<a class="tag" href="{{ "/HRI_poster.pdf" | relative_url }}">Poster</a>] [<a class="tag" href="https://xuconghu.github.io/ABOT2.0/" target="_blank" rel="noopener">Website</a>]</div>
       </div>
     </div>
