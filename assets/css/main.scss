@@ -384,7 +384,7 @@
 
 .news-float {
   position: fixed;
-  right: 24px;
+  right: 1%;
   top: 120px;
   width: 360px;
   max-height: calc(100vh - 160px);
@@ -435,6 +435,50 @@
 .news-title {
   font-weight: 600;
   font-size: 1.05em;
+}
+
+.news-toggle {
+  margin-left: auto;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--global-text-color);
+  padding: 2px 5px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  transition: background 0.2s;
+}
+
+.news-toggle:hover {
+  background: var(--global-border-color);
+}
+
+.news-toggle i {
+  transition: transform 0.2s;
+}
+
+.news-float--collapsed .news-toggle i {
+  transform: rotate(-90deg);
+}
+
+.news-float--collapsed .news-list {
+  display: none;
+}
+
+.badge-honor {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background: linear-gradient(135deg, #b8860b, #e0a800);
+  color: #fff;
+  font-size: 0.72em;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 999px;
+  margin-left: 6px;
+  white-space: nowrap;
+  vertical-align: middle;
 }
 
 .news-float .news-list {
@@ -495,7 +539,11 @@ html[data-theme="dark"] .timeline-host {
   .about-split {
     grid-template-columns: 1fr;
   }
+}
 
+/* On screens ≤ 1600px the fixed panel would overlap the content area,
+   so fall back to static in-flow positioning */
+@media screen and (max-width: 1600px) {
   .news-float {
     position: static;
     width: auto;

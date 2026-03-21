@@ -54,12 +54,24 @@ redirect_from:
   </div>
 </div>
 
-<aside class="news-float" aria-label="News">
+<aside class="news-float" aria-label="News" id="news-float">
   <div class="news-header">
     <i class="fas fa-fire news-logo" aria-hidden="true"></i>
     <span class="news-title">News</span>
+    <button class="news-toggle" id="news-toggle-btn" aria-label="Toggle news panel" title="Collapse / Expand">
+      <i class="fas fa-chevron-down" id="news-toggle-icon"></i>
+    </button>
   </div>
   <ul class="news-list">
+    <li class="news-item">
+      <span class="news-date">2026.03</span>
+      <span class="news-text">🏅 Our paper "RoSIP: A Scale for Measuring Appearance-Based Social Interaction Potential in Robots" received <strong>Best Paper Honorable Mention</strong> at <em>HRI 2026</em>!</span>
+      <div class="news-media">
+        <object data="{{ "/info/news/lbr-honourable-hu-rosip.pdf" | relative_url }}" type="application/pdf" width="100%" height="200">
+          <a href="{{ "/info/news/lbr-honourable-hu-rosip.pdf" | relative_url }}" target="_blank" rel="noopener">View PDF</a>
+        </object>
+      </div>
+    </li>
     <li class="news-item">
       <span class="news-date">2026.02</span>
       <span class="news-text">🎉🎉🎉 Our work "I'll Believe It Unless It's Too Absurd: Spontaneous Visual Perspective-Taking as Prior-Based Heuristic Inference" has been accepted for poster presentation at <em>Vision Sciences Society (VSS 2026)</em>. See you in St. Pete Beach in May!</span>
@@ -209,7 +221,7 @@ redirect_from:
       <div class="pub-right">
         <div class="title">RoSIP: A Scale for Measuring Appearance-Based Social Interaction Potential in Robots</div>
         <div class="authors"><strong>Hu, X.</strong>, Hu, Q., Yu, T., Shen, M., & Zhou, J.</div>
-        <div class="publish">The 2026 ACM/IEEE International Conference on Human-Robot Interaction Late-Breaking Reports (Edinburgh, UK) <span class="publish-icon" aria-hidden="true"><i class="fas fa-map-marker-alt"></i></span></div>
+        <div class="publish">The 2026 ACM/IEEE International Conference on Human-Robot Interaction Late-Breaking Reports (Edinburgh, UK) <span class="publish-icon" aria-hidden="true"><i class="fas fa-map-marker-alt"></i></span> <span class="badge-honor"><i class="fas fa-medal" aria-hidden="true"></i> Best Paper Honorable Mention</span></div>
         <div class="tags">[<a class="tag" href="{{ "/info/Under_Review/RoSIP__A_Scale_for_Measuring_Appearance_Based_Social_Interaction_Potential_in_Robots.pdf" | relative_url }}">Paper</a>] [<a class="tag" href="{{ "/HRI_poster.pdf" | relative_url }}">Poster</a>] [<a class="tag" href="https://xuconghu.github.io/ABOT2.0/" target="_blank" rel="noopener">Website</a>]</div>
       </div>
     </div>
@@ -373,3 +385,29 @@ redirect_from:
 <p>Feel free to reach out via email at <a href="mailto:xuconghu@zju.edu.cn">xuconghu@zju.edu.cn</a> or <a href="mailto:huxucong0237@gmail.com">huxucong0237@gmail.com</a>.</p>
 <p><strong>Address</strong>: 866 Yuhangtang Road, Hangzhou, Zhejiang, 310058, China</p>
 <p><a href="/files/XucongHu_CV.pdf">Download CV (PDF)</a></p>
+
+<script>
+(function () {
+  var panel = document.getElementById('news-float');
+  var btn   = document.getElementById('news-toggle-btn');
+  if (!panel || !btn) return;
+
+  function setCollapsed(collapsed) {
+    if (collapsed) {
+      panel.classList.add('news-float--collapsed');
+    } else {
+      panel.classList.remove('news-float--collapsed');
+    }
+    try { localStorage.setItem('news-collapsed', String(collapsed)); } catch(e) {}
+  }
+
+  // Restore saved state
+  try {
+    if (localStorage.getItem('news-collapsed') === 'true') setCollapsed(true);
+  } catch(e) {}
+
+  btn.addEventListener('click', function () {
+    setCollapsed(!panel.classList.contains('news-float--collapsed'));
+  });
+})();
+</script>
