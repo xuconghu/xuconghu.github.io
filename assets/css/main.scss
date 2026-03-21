@@ -382,24 +382,16 @@
   font-size: 0.9em;
 }
 
-.about-layout {
-  display: flex;
-  gap: 28px;
-  align-items: flex-start;
-}
-
 .about-main-col {
-  flex: 1 1 0;
-  min-width: 0;
+  /* padding-right reserved for fixed news panel on wide screens — see media query below */
 }
 
 .news-float {
-  flex: 0 0 28%;
-  min-width: 220px;
-  position: sticky;
+  position: fixed;
+  right: 16px;
   top: 80px;
-  align-self: flex-start;
-  max-height: calc(100vh - 120px);
+  width: 280px;
+  max-height: calc(100vh - 100px);
   overflow-y: auto;
   padding: 12px 14px;
   background: var(--global-bg-color);
@@ -552,25 +544,21 @@ html[data-theme="dark"] .timeline-host {
   }
 }
 
-/* On narrow screens: stack layout vertically */
-@media screen and (max-width: 1100px) {
-  .about-layout {
-    flex-direction: column;
+/* On wide screens: reserve space for fixed news panel */
+@media screen and (min-width: 1101px) {
+  .about-main-col {
+    padding-right: 310px; /* 280px panel + 16px right offset + 14px buffer */
   }
+}
 
+/* On narrow screens: news panel becomes inline */
+@media screen and (max-width: 1100px) {
   .news-float {
-    flex: none;
     position: static;
     width: 100%;
     max-height: none;
     box-shadow: none;
     margin: 1rem 0 0;
-  }
-}
-
-@media screen and (min-width: 1100px) {
-  .about-page {
-    padding-right: 0;
   }
 }
 
