@@ -9,14 +9,10 @@ redirect_from:
 
 <style>
 .page__title { display: none; }
-
-/* Push content left to make room for the fixed news panel (1101px–∞) */
-@media screen and (min-width: 1101px) {
-  .page__content {
-    padding-right: calc(360px + 1vw + 24px);
-  }
-}
 </style>
+
+<div class="about-layout">
+<div class="about-main-col">
 
 <a id="about"></a>
 
@@ -60,69 +56,6 @@ redirect_from:
     </div>
   </div>
 </div>
-
-<aside class="news-float" aria-label="News" id="news-float">
-  <div class="news-header">
-    <i class="fas fa-fire news-logo" aria-hidden="true"></i>
-    <span class="news-title">News</span>
-    <button class="news-toggle" aria-label="Toggle news panel" title="Collapse / Expand" onclick="(function(btn){var p=btn.closest('.news-float');var c=p.classList.toggle('news-float--collapsed');try{localStorage.setItem('news-collapsed',c)}catch(e){};})(this)">
-      <i class="fas fa-chevron-down"></i>
-    </button>
-  </div>
-  <ul class="news-list">
-    <li class="news-item">
-      <span class="news-date">2026.03</span>
-      <span class="news-text">🏅 Our paper "RoSIP: A Scale for Measuring Appearance-Based Social Interaction Potential in Robots" received <strong>Honorable Mention</strong> (10/224) at <em>HRI 2026</em>!</span>
-      <div class="news-media">
-        <img src="{{ "/info/news/lbr-honourable-hu-rosip.png" | relative_url }}" alt="RoSIP Best Paper Honorable Mention – HRI 2026" />
-      </div>
-    </li>
-    <li class="news-item">
-      <span class="news-date">2026.02</span>
-      <span class="news-text">🎉🎉🎉 Our work "I'll Believe It Unless It's Too Absurd: Spontaneous Visual Perspective-Taking as Prior-Based Heuristic Inference" has been accepted for poster presentation at <em>Vision Sciences Society (VSS 2026)</em>. See you in St. Pete Beach in May!</span>
-    </li>
-    <li class="news-item">
-      <span class="news-date">2026.02</span>
-      <span class="news-text">🎉🎉🎉 Our paper "I'll Believe It Unless It's Too Absurd: Spontaneous Visual Perspective-Taking as Prior-Based Heuristic Inference" has been published in <em>Cognition</em>.</span>
-    </li>
-    <li class="news-item">
-      <span class="news-date">2026.02</span>
-      <span class="news-text">🎉🎉🎉 Our paper "How Can We Make Robots Intelligible? Building Perception-Behavior Causal Links for User-Centered Explainability" has been published in <em>International Journal of Human–Computer Interaction</em>.</span>
-    </li>
-    <li class="news-item">
-      <span class="news-date">2026.01</span>
-      <span class="news-text">📄 Our paper "Simulated Annealing Enhances Theory-of-Mind Reasoning in Autoregressive Language Models" is now available as a preprint on <a href="https://arxiv.org/abs/2601.12269" target="_blank" rel="noopener"><em>arXiv</em></a>.</span>
-    </li>
-    <li class="news-item">
-      <span class="news-date">2026.01</span>
-      <span class="news-text">🎉🎉🎉 Our paper "RoSIP: A Scale for Measuring Appearance-Based Social Interaction Potential in Robots" has been accepted by <em>HRI 2026</em> Late-Breaking Reports. See you in Edinburgh in March!</span>
-    </li>
-    <li class="news-item">
-      <span class="news-date">2025.10</span>
-      <span class="news-text">🎉🎉🎉 Awarded <strong>National Scholarship</strong> (2024-2025), top 1 student in college per year!</span>
-      <div class="news-media">
-        <img src="{{ "/info/news/National%20Scholarship.jpg" | relative_url }}" alt="National Scholarship" />
-      </div>
-    </li>
-    <li class="news-item">
-      <span class="news-date">2025.03</span>
-      <span class="news-text">🎉🎉🎉 Our paper "Good to see you R2-D2: Inducing spontaneous perspective-taking towards non-human agents through human-like gaze and reach" has been published in <em>Cognition</em>.</span>
-    </li>
-    <li class="news-item">
-      <span class="news-date">2025.02</span>
-      <span class="news-text">🎉🎉🎉 Our Paper "Enhancement of joint flanker effect in intergroup competition" has been published in <em>PsyCh Journal</em>.</span>
-    </li>
-    <li class="news-item">
-      <span class="news-date">2024.12</span>
-      <span class="news-text">🎤 Oral presentation at the Annual Conference on Industrial Psychology and New Productivity in Shanghai!</span>
-      <div class="news-media">
-        <img src="{{ "/info/news/Annual%20Conference%20on%20Industrial%20Psychology%20and%20New%20Productivity.jpg" | relative_url }}" alt="Annual Conference on Industrial Psychology and New Productivity" />
-      </div>
-    </li>
-  </ul>
-</aside>
-
-
 
 <h1 id="publications"><i class="fas fa-fw fa-file-lines section-icon" aria-hidden="true"></i>Publications</h1>
 
@@ -391,6 +324,71 @@ redirect_from:
 <p>Feel free to reach out via email at <a href="mailto:xuconghu@zju.edu.cn">xuconghu@zju.edu.cn</a> or <a href="mailto:huxucong0237@gmail.com">huxucong0237@gmail.com</a>.</p>
 <p><strong>Address</strong>: 866 Yuhangtang Road, Hangzhou, Zhejiang, 310058, China</p>
 <p><a href="/files/XucongHu_CV.pdf">Download CV (PDF)</a></p>
+
+</div><!-- /.about-main-col -->
+
+<aside class="news-float" aria-label="News" id="news-float">
+  <div class="news-header">
+    <i class="fas fa-fire news-logo" aria-hidden="true"></i>
+    <span class="news-title">News</span>
+    <button class="news-toggle" aria-label="Toggle news panel" title="Collapse / Expand" onclick="(function(btn){var p=btn.closest('.news-float');var c=p.classList.toggle('news-float--collapsed');try{localStorage.setItem('news-collapsed',c)}catch(e){};})(this)">
+      <i class="fas fa-chevron-down"></i>
+    </button>
+  </div>
+  <ul class="news-list">
+    <li class="news-item">
+      <span class="news-date">2026.03</span>
+      <span class="news-text">🏅 Our paper "RoSIP: A Scale for Measuring Appearance-Based Social Interaction Potential in Robots" received <strong>Honorable Mention</strong> (10/224) at <em>HRI 2026</em>!</span>
+      <div class="news-media">
+        <img src="{{ "/info/news/lbr-honourable-hu-rosip.png" | relative_url }}" alt="RoSIP Honorable Mention – HRI 2026" />
+      </div>
+    </li>
+    <li class="news-item">
+      <span class="news-date">2026.02</span>
+      <span class="news-text">🎉🎉🎉 Our work "I'll Believe It Unless It's Too Absurd: Spontaneous Visual Perspective-Taking as Prior-Based Heuristic Inference" has been accepted for poster presentation at <em>Vision Sciences Society (VSS 2026)</em>. See you in St. Pete Beach in May!</span>
+    </li>
+    <li class="news-item">
+      <span class="news-date">2026.02</span>
+      <span class="news-text">🎉🎉🎉 Our paper "I'll Believe It Unless It's Too Absurd: Spontaneous Visual Perspective-Taking as Prior-Based Heuristic Inference" has been published in <em>Cognition</em>.</span>
+    </li>
+    <li class="news-item">
+      <span class="news-date">2026.02</span>
+      <span class="news-text">🎉🎉🎉 Our paper "How Can We Make Robots Intelligible? Building Perception-Behavior Causal Links for User-Centered Explainability" has been published in <em>International Journal of Human–Computer Interaction</em>.</span>
+    </li>
+    <li class="news-item">
+      <span class="news-date">2026.01</span>
+      <span class="news-text">📄 Our paper "Simulated Annealing Enhances Theory-of-Mind Reasoning in Autoregressive Language Models" is now available as a preprint on <a href="https://arxiv.org/abs/2601.12269" target="_blank" rel="noopener"><em>arXiv</em></a>.</span>
+    </li>
+    <li class="news-item">
+      <span class="news-date">2026.01</span>
+      <span class="news-text">🎉🎉🎉 Our paper "RoSIP: A Scale for Measuring Appearance-Based Social Interaction Potential in Robots" has been accepted by <em>HRI 2026</em> Late-Breaking Reports. See you in Edinburgh in March!</span>
+    </li>
+    <li class="news-item">
+      <span class="news-date">2025.10</span>
+      <span class="news-text">🎉🎉🎉 Awarded <strong>National Scholarship</strong> (2024-2025), top 1 student in college per year!</span>
+      <div class="news-media">
+        <img src="{{ "/info/news/National%20Scholarship.jpg" | relative_url }}" alt="National Scholarship" />
+      </div>
+    </li>
+    <li class="news-item">
+      <span class="news-date">2025.03</span>
+      <span class="news-text">🎉🎉🎉 Our paper "Good to see you R2-D2: Inducing spontaneous perspective-taking towards non-human agents through human-like gaze and reach" has been published in <em>Cognition</em>.</span>
+    </li>
+    <li class="news-item">
+      <span class="news-date">2025.02</span>
+      <span class="news-text">🎉🎉🎉 Our Paper "Enhancement of joint flanker effect in intergroup competition" has been published in <em>PsyCh Journal</em>.</span>
+    </li>
+    <li class="news-item">
+      <span class="news-date">2024.12</span>
+      <span class="news-text">🎤 Oral presentation at the Annual Conference on Industrial Psychology and New Productivity in Shanghai!</span>
+      <div class="news-media">
+        <img src="{{ "/info/news/Annual%20Conference%20on%20Industrial%20Psychology%20and%20New%20Productivity.jpg" | relative_url }}" alt="Annual Conference on Industrial Psychology and New Productivity" />
+      </div>
+    </li>
+  </ul>
+</aside>
+
+</div><!-- /.about-layout -->
 
 <script>
 // Restore news panel collapsed state from previous visit
