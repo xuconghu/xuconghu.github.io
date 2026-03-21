@@ -383,7 +383,6 @@
 }
 
 .about-main-col {
-  /* padding-right reserved for fixed news panel on wide screens — see media query below */
 }
 
 .news-float {
@@ -544,15 +543,8 @@ html[data-theme="dark"] .timeline-host {
   }
 }
 
-/* On wide screens: reserve space for fixed news panel */
-@media screen and (min-width: 1101px) {
-  .about-main-col {
-    padding-right: 310px; /* 280px panel + 16px right offset + 14px buffer */
-  }
-}
-
-/* On narrow screens: news panel becomes inline */
-@media screen and (max-width: 1100px) {
+/* On narrow screens: news panel becomes inline below content */
+@media screen and (max-width: 1350px) {
   .news-float {
     position: static;
     width: 100%;
