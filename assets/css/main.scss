@@ -541,9 +541,8 @@ html[data-theme="dark"] .timeline-host {
   }
 }
 
-/* On screens ≤ 1600px the fixed panel would overlap the content area,
-   so fall back to static in-flow positioning */
-@media screen and (max-width: 1600px) {
+/* On screens ≤ 1100px fall back to static in-flow positioning */
+@media screen and (max-width: 1100px) {
   .news-float {
     position: static;
     width: auto;

@@ -9,6 +9,13 @@ redirect_from:
 
 <style>
 .page__title { display: none; }
+
+/* Push content left to make room for the fixed news panel (1101px–∞) */
+@media screen and (min-width: 1101px) {
+  .page__content {
+    padding-right: calc(360px + 1vw + 24px);
+  }
+}
 </style>
 
 <a id="about"></a>
