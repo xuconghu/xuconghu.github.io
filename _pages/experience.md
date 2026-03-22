@@ -18,6 +18,15 @@ author_profile: true
     </div>
     <div class="edu-item">
       <div class="edu-school">
+        <span class="edu-name">The University of Hong Kong</span>
+        <img class="edu-logo" src="{{ "/images/hku_logo.png" | relative_url }}" alt="The University of Hong Kong logo" />
+      </div>
+      <div class="edu-location">Hong Kong SAR, China</div>
+      <div class="edu-meta">Visiting Student | Mar. 2026 - Sep. 2026</div>
+      <div class="edu-meta edu-advisors">Advisor: <a href="https://sites.google.com/view/zhujq" target="_blank" rel="noopener">Prof. Jian-Qiao Zhu</a></div>
+    </div>
+    <div class="edu-item">
+      <div class="edu-school">
         <span class="edu-name">Southwest University</span>
         <img class="edu-logo" src="{{ "/images/swu_logo.png" | relative_url }}" alt="Southwest University logo" />
       </div>

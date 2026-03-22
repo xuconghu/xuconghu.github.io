@@ -46,6 +46,15 @@ redirect_from:
         </div>
         <div class="edu-item">
           <div class="edu-school">
+            <span class="edu-name">The University of Hong Kong</span>
+            <img class="edu-logo" src="{{ "/images/hku_logo.png" | relative_url }}" alt="The University of Hong Kong logo" />
+          </div>
+          <div class="edu-location">Hong Kong SAR, China</div>
+          <div class="edu-meta">Visiting Student | Mar. 2026 - Sep. 2026</div>
+          <div class="edu-meta edu-advisors">Advisor: <a href="https://sites.google.com/view/zhujq" target="_blank" rel="noopener">Prof. Jian-Qiao Zhu</a></div>
+        </div>
+        <div class="edu-item">
+          <div class="edu-school">
             <span class="edu-name">Southwest University</span>
             <img class="edu-logo" src="{{ "/images/swu_logo.png" | relative_url }}" alt="Southwest University logo" />
           </div>
@@ -336,6 +345,10 @@ redirect_from:
     </button>
   </div>
   <ul class="news-list">
+    <li class="news-item">
+      <span class="news-date">2026.03</span>
+      <span class="news-text">✈️ Excited to share that I will be visiting <a href="https://sites.google.com/view/zhujq" target="_blank" rel="noopener">Prof. Jian-Qiao Zhu</a>'s lab at <em>The University of Hong Kong</em> from March to September 2026. Looking forward to the collaboration!</span>
+    </li>
     <li class="news-item">
       <span class="news-date">2026.03</span>
       <span class="news-text">🏅 Our paper "RoSIP: A Scale for Measuring Appearance-Based Social Interaction Potential in Robots" received <strong>Honorable Mention</strong> (10/224) at <em>HRI 2026</em>!</span>
