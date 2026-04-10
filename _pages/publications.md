@@ -88,6 +88,18 @@ author_profile: true
   <div class="pub-list">
     <div class="pub">
       <div class="pub-left">
+        <img class="pub-cover" src="{{ "/info/Under_Review/Simulated_Annealing.png" | relative_url }}" alt="CogSci 2026 cover" />
+        <div class="pub-badge">2026</div>
+      </div>
+      <div class="pub-right">
+        <div class="title">Simulated annealing enhances theory-of-mind reasoning in autoregressive language models</div>
+        <div class="authors"><strong>Hu, X.</strong>, & Zhu, J. Q.</div>
+        <div class="publish">Proceedings of the 48th Annual Conference of the Cognitive Science Society (CogSci 2026) (Poster, Rio de Janeiro, Brazil) <span class="publish-icon" aria-hidden="true"><i class="fas fa-map-marker-alt"></i></span></div>
+        <div class="tags">[<a class="tag" href="https://arxiv.org/abs/2601.12269" target="_blank" rel="noopener">arXiv</a>] [<a class="tag" href="https://arxiv.org/pdf/2601.12269" target="_blank" rel="noopener">Paper</a>]</div>
+      </div>
+    </div>
+    <div class="pub">
+      <div class="pub-left">
         <img class="pub-cover" src="{{ "/info/Under_Review/I%27ll%20Believe%20It%20Unless.svg" | relative_url }}" alt="VSS 2026 cover" />
         <div class="pub-badge">2026</div>
       </div>
@@ -133,16 +145,6 @@ author_profile: true
       <div class="pub-right">
         <div class="title">Seeing through Janus' Eyes: How Humans Spontaneously Adopt Multiple Perspectives of Robot Avatars</div>
         <div class="authors"><strong>Hu, X.</strong>, Xu, H., Chen, H., Shen, M., & Zhou, J.</div>
-      </div>
-    </div>
-    <div class="pub">
-      <div class="pub-left">
-        <img class="pub-cover" src="{{ "/info/Under_Review/Social%20Affordance%20Behind%20Robots%27.GIF" | relative_url }}" alt="Social Affordance Behind Robots' cover" />
-        <div class="pub-badge">2025</div>
-      </div>
-      <div class="pub-right">
-        <div class="title">Social Affordance Behind Robots' Appearance Features</div>
-        <div class="authors"><strong>Hu, X.</strong>, Hu, Q., Yu, T., Shen, M., & Zhou, J.</div>
       </div>
     </div>
   </div>

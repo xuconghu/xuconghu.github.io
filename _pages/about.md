@@ -150,6 +150,18 @@ redirect_from:
   <div class="pub-list">
     <div class="pub">
       <div class="pub-left">
+        <img class="pub-cover" src="{{ "/info/Under_Review/Simulated_Annealing.png" | relative_url }}" alt="CogSci 2026 cover" />
+        <div class="pub-badge">2026</div>
+      </div>
+      <div class="pub-right">
+        <div class="title">Simulated annealing enhances theory-of-mind reasoning in autoregressive language models</div>
+        <div class="authors"><strong>Hu, X.</strong>, & Zhu, J. Q.</div>
+        <div class="publish">Proceedings of the 48th Annual Conference of the Cognitive Science Society (CogSci 2026) (Poster, Rio de Janeiro, Brazil) <span class="publish-icon" aria-hidden="true"><i class="fas fa-map-marker-alt"></i></span></div>
+        <div class="tags">[<a class="tag" href="https://arxiv.org/abs/2601.12269" target="_blank" rel="noopener">arXiv</a>] [<a class="tag" href="https://arxiv.org/pdf/2601.12269" target="_blank" rel="noopener">Paper</a>]</div>
+      </div>
+    </div>
+    <div class="pub">
+      <div class="pub-left">
         <img class="pub-cover" src="{{ "/info/Under_Review/I%27ll%20Believe%20It%20Unless.svg" | relative_url }}" alt="VSS 2026 cover" />
         <div class="pub-badge">2026</div>
       </div>
@@ -208,17 +220,6 @@ redirect_from:
       <div class="pub-right">
         <div class="title">Seeing through Janus' Eyes: How Humans Spontaneously Adopt Multiple Perspectives of Robot Avatars</div>
         <div class="authors"><strong>Hu, X.</strong>, et al.</div>
-      </div>
-    </div>
-    <div class="pub">
-      <div class="pub-left">
-        <img class="pub-cover" src="{{ "/info/Under_Review/Simulated_Annealing.png" | relative_url }}" alt="Simulated Annealing cover" />
-        <div class="pub-badge">2026</div>
-      </div>
-      <div class="pub-right">
-        <div class="title">Simulated Annealing Enhances Theory-of-Mind Reasoning in Autoregressive Language Models</div>
-        <div class="authors"><strong>Hu, X.</strong>, & Zhu, J. Q.</div>
-        <div class="tags">[<a class="tag" href="https://arxiv.org/abs/2601.12269" target="_blank" rel="noopener">arXiv</a>] [<a class="tag" href="https://arxiv.org/pdf/2601.12269" target="_blank" rel="noopener">Paper</a>]</div>
       </div>
     </div>
   </div>
@@ -345,6 +346,10 @@ redirect_from:
     </button>
   </div>
   <ul class="news-list">
+    <li class="news-item">
+      <span class="news-date">2026.04</span>
+      <span class="news-text">🎉🎉🎉 Our paper "Simulated annealing enhances theory-of-mind reasoning in autoregressive language models" has been accepted for poster presentation at <em>CogSci 2026</em>. See you in Rio de Janeiro in July!</span>
+    </li>
     <li class="news-item">
       <span class="news-date">2026.03</span>
       <span class="news-text">✈️ Excited to share that I will be visiting <a href="https://sites.google.com/view/zhujq" target="_blank" rel="noopener">Prof. Jian-Qiao Zhu</a>'s lab at <em>The University of Hong Kong</em> from March to September 2026. Looking forward to the collaboration!</span>
