@@ -21,7 +21,7 @@ redirect_from:
 <div class="about-page">
   <div class="about-top">
     <div class="about-main">
-    <p>I am a Master's student in Psychology at <a href="https://www.zju.edu.cn/english/">Zhejiang University</a>, advised by <a href="https://person.zju.edu.cn/en/jifanzhou" target="_blank" rel="noopener">Prof. Jifan Zhou</a> (Young Changjiang Scholar) and <a href="https://person.zju.edu.cn/moweishen" target="_blank" rel="noopener">Prof. Mowei Shen</a> (Changjiang Distinguished Professor). I have published multiple first-author papers in top international journals and conferences in psychology and CS, including <em>Cognition</em>, <em>ACM/IEEE HRI</em>, etc., with substantial work currently under review.</p>
+    <p>I am a Master's student in Psychology at <a href="https://www.zju.edu.cn/english/">Zhejiang University</a>, advised by <a href="https://person.zju.edu.cn/en/jifanzhou" target="_blank" rel="noopener">Prof. Jifan Zhou</a> (Young Changjiang Scholar) and <a href="https://person.zju.edu.cn/moweishen" target="_blank" rel="noopener">Prof. Mowei Shen</a> (Changjiang Distinguished Professor). I have published multiple first-author papers in top international journals and conferences in psychology and CS, including <em>Cognition</em>, <em>CogSci</em>, <em>ACM/IEEE HRI</em>, etc., with substantial work currently under review.</p>
     <p>My research interests are broad, focusing on how intelligent systems (robots, LLMs, etc.) can be endowed with minds—through large-scale online behavioral experiments in human-machine interaction and cognitive modeling. Recently, my work centers on <strong>test-time optimization in LLM reasoning</strong>.</p>
 
     <div class="about-split">
