@@ -84,7 +84,7 @@ author_profile: true
     </div>
   </div>
 
-  <h2><i class="fas fa-fw fa-comments section-icon" aria-hidden="true"></i>Conference Papers & Presentations</h2>
+  <h2><i class="fas fa-fw fa-comments section-icon" aria-hidden="true"></i>Conference Presentations</h2>
   <div class="pub-list">
     <div class="pub">
       <div class="pub-left">
