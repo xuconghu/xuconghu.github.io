@@ -92,7 +92,7 @@ redirect_from:
       <div class="pub-right">
         <div class="title">How Can We Make Robots Intelligible? Building Perception-Behavior Causal Links for User-Centered Explainability</div>
         <div class="authors"><strong>Hu, X.</strong>, Xu, E., Xu, H., Shen, M., & Zhou, J.</div>
-        <div class="publish">International Journal of Human–Computer Interaction, 1–16. <a href="https://doi.org/10.1080/10447318.2026.2633220" target="_blank" rel="noopener">https://doi.org/10.1080/10447318.2026.2633220</a></div>
+        <div class="publish">International Journal of Human–Computer Interaction, 1–16.</div>
         <div class="tags">[<a class="tag" href="{{ "/info/IJHCI/How%20Can%20We%20Make%20Robots%20Intelligible%20Building%20Perception-Behavior%20Causal%20Links%20for%20User-Centered%20Explainability.pdf" | relative_url }}">Paper</a>]</div>
       </div>
     </div>
@@ -148,6 +148,17 @@ redirect_from:
 
   <h2><i class="fas fa-fw fa-comments section-icon" aria-hidden="true"></i>Conference Papers</h2>
   <div class="pub-list">
+    <div class="pub">
+      <div class="pub-left">
+        <img class="pub-cover" src="{{ "/info/Under_Review/Someone_May_Sit_There.gif" | relative_url }}" alt="Someone May Sit There preview" />
+        <div class="pub-badge">2026</div>
+      </div>
+      <div class="pub-right">
+        <div class="title">Someone May Sit There: Social Affordances Shape Visual Perspective-Taking</div>
+        <div class="authors"><strong>Hu, X.</strong>, Huang, T., Zheng, Y., Chen, H., Shen, M., & Zhou, J.</div>
+        <div class="publish">67th Annual Meeting of the Psychonomic Society (Poster, San Diego, CA, USA) <span class="publish-icon" aria-hidden="true"><i class="fas fa-map-marker-alt"></i></span></div>
+      </div>
+    </div>
     <div class="pub">
       <div class="pub-left">
         <img class="pub-cover" src="{{ "/info/Under_Review/Simulated_Annealing.png" | relative_url }}" alt="CogSci 2026 cover" />
@@ -346,6 +357,10 @@ redirect_from:
     </button>
   </div>
   <ul class="news-list">
+    <li class="news-item">
+      <span class="news-date">2026.07</span>
+      <span class="news-text">🎉🎉🎉 Our work "Someone May Sit There: Social Affordances Shape Visual Perspective-Taking" has been accepted for poster presentation at the <em>67th Annual Meeting of the Psychonomic Society</em>. See you in San Diego in November!</span>
+    </li>
     <li class="news-item">
       <span class="news-date">2026.04</span>
       <span class="news-text">🎉🎉🎉 Our paper "Simulated annealing enhances theory-of-mind reasoning in autoregressive language models" has been accepted for poster presentation at <em>CogSci 2026</em>. See you in Rio de Janeiro in July!</span>
