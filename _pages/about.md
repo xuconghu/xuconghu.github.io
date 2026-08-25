@@ -225,6 +225,29 @@ redirect_from:
   <div class="pub-list">
     <div class="pub">
       <div class="pub-left">
+        <img class="pub-cover" src="{{ "/info/Under_Review/What_Others_See.gif" | relative_url }}" alt="What Others See Shapes What We See animated cover" />
+        <div class="pub-badge">2026</div>
+      </div>
+      <div class="pub-right">
+        <div class="title">What Others See Shapes What We See: Animacy Biases Object Recognition across Visual Perspectives</div>
+        <div class="authors"><strong>Hu, X.</strong>, Zheng, Y., Zhang, D., Huang, T., Chen, H., Shen, M., & Zhou, J.</div>
+        <div class="publish">Under review</div>
+      </div>
+    </div>
+    <div class="pub">
+      <div class="pub-left">
+        <img class="pub-cover" src="{{ "/info/Under_Review/Beyond_Human_Like_Responses.gif" | relative_url }}" alt="Beyond Human-like Responses animated cover" />
+        <div class="pub-badge">2026</div>
+      </div>
+      <div class="pub-right">
+        <div class="title">Beyond Human-like Responses: Evaluating the Implicit Personality Alignment of Large Language Models</div>
+        <div class="authors">Hu, Q., Fei, X., Li, Z., <strong>Hu, X.</strong>, Zhang, M., Shen, M., & Zhou, J.</div>
+        <div class="publish">Under review</div>
+        <div class="tags">[<a class="tag" href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7312181" target="_blank" rel="noopener">SSRN</a>]</div>
+      </div>
+    </div>
+    <div class="pub">
+      <div class="pub-left">
         <img class="pub-cover" src="{{ "/info/Under_Review/Seeing%20through%20Janus%27%20Eyes.jpg" | relative_url }}" alt="Seeing through Janus' Eyes cover" />
         <div class="pub-badge">2025</div>
       </div>
