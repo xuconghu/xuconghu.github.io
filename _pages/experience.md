@@ -22,7 +22,7 @@ author_profile: true
         <img class="edu-logo" src="{{ "/images/hku_logo.png" | relative_url }}" alt="The University of Hong Kong logo" />
       </div>
       <div class="edu-location">Hong Kong SAR, China</div>
-      <div class="edu-meta">Visiting Student | Jul. 2026</div>
+      <div class="edu-meta">Visiting Student | Mar. 2026 - Jul. 2026</div>
       <div class="edu-meta edu-advisors">Advisor: <a href="https://sites.google.com/view/zhujq" target="_blank" rel="noopener">Prof. Jian-Qiao Zhu</a></div>
     </div>
     <div class="edu-item">

@@ -50,7 +50,7 @@ redirect_from:
             <img class="edu-logo" src="{{ "/images/hku_logo.png" | relative_url }}" alt="The University of Hong Kong logo" />
           </div>
           <div class="edu-location">Hong Kong SAR, China</div>
-          <div class="edu-meta">Visiting Student | Jul. 2026</div>
+          <div class="edu-meta">Visiting Student | Mar. 2026 - Jul. 2026</div>
           <div class="edu-meta edu-advisors">Advisor: <a href="https://sites.google.com/view/zhujq" target="_blank" rel="noopener">Prof. Jian-Qiao Zhu</a></div>
         </div>
         <div class="edu-item">
@@ -290,7 +290,7 @@ redirect_from:
       </div>
     </div>
     <div class="timeline-item">
-      <div class="timeline-date">Jul. 2026 - Present</div>
+      <div class="timeline-date">Oct. 2025 - Jul. 2026</div>
       <div class="timeline-title">
         <span class="timeline-org">
           <img class="timeline-logo" src="{{ "/images/hku_logo.png" | relative_url }}" alt="The University of Hong Kong logo" />
