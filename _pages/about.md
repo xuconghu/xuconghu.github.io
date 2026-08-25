@@ -21,8 +21,8 @@ redirect_from:
 <div class="about-page">
   <div class="about-top">
     <div class="about-main">
-    <p>I am a Master's student in Psychology at <a href="https://www.zju.edu.cn/english/">Zhejiang University</a>, advised by <a href="https://person.zju.edu.cn/en/jifanzhou" target="_blank" rel="noopener">Prof. Jifan Zhou</a> (Young Changjiang Scholar) and <a href="https://person.zju.edu.cn/moweishen" target="_blank" rel="noopener">Prof. Mowei Shen</a> (Changjiang Distinguished Professor). I have published multiple first-author papers in top international journals and conferences in psychology and CS, including <em>Cognition</em>, <em>CogSci</em>, <em>ACM/IEEE HRI</em>, etc., with substantial work currently under review.</p>
-    <p>My research interests are broad, focusing on how intelligent systems (robots, LLMs, etc.) can be endowed with minds—through large-scale online behavioral experiments in human-machine interaction and cognitive modeling. Recently, my work centers on <strong>test-time optimization in LLM reasoning</strong>.</p>
+    <p>I am a Master's student in Psychology at <a href="https://www.zju.edu.cn/english/">Zhejiang University</a>, advised by <a href="https://person.zju.edu.cn/en/jifanzhou" target="_blank" rel="noopener">Prof. Jifan Zhou</a> and <a href="https://person.zju.edu.cn/moweishen" target="_blank" rel="noopener">Prof. Mowei Shen</a>. I have published multiple first-author papers in top international journals and conferences in psychology and CS, including <em>Cognition</em>, <em>CogSci</em>, <em>ACM/IEEE HRI</em>, etc., with substantial work currently under review.</p>
+    <p>My research interests are broad, focusing on how intelligent systems (robots, LLMs, etc.) can be endowed with minds—through large-scale online behavioral experiments in human-machine interaction and cognitive modeling.</p>
 
     <div class="about-split">
       <div class="about-col">
@@ -50,7 +50,7 @@ redirect_from:
             <img class="edu-logo" src="{{ "/images/hku_logo.png" | relative_url }}" alt="The University of Hong Kong logo" />
           </div>
           <div class="edu-location">Hong Kong SAR, China</div>
-          <div class="edu-meta">Visiting Student | Mar. 2026 - Sep. 2026</div>
+          <div class="edu-meta">Visiting Student | Jul. 2026</div>
           <div class="edu-meta edu-advisors">Advisor: <a href="https://sites.google.com/view/zhujq" target="_blank" rel="noopener">Prof. Jian-Qiao Zhu</a></div>
         </div>
         <div class="edu-item">
@@ -265,6 +265,7 @@ redirect_from:
       <div class="pub-right">
         <div class="title">Seeing through Janus' Eyes: How Humans Spontaneously Adopt Multiple Perspectives of Robot Avatars</div>
         <div class="authors"><strong>Hu, X.</strong>, et al.</div>
+        <div class="publish">Under review</div>
       </div>
     </div>
   </div>
@@ -289,7 +290,7 @@ redirect_from:
       </div>
     </div>
     <div class="timeline-item">
-      <div class="timeline-date">Oct. 2025 - Present</div>
+      <div class="timeline-date">Jul. 2026 - Present</div>
       <div class="timeline-title">
         <span class="timeline-org">
           <img class="timeline-logo" src="{{ "/images/hku_logo.png" | relative_url }}" alt="The University of Hong Kong logo" />

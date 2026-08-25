@@ -190,6 +190,7 @@ author_profile: true
       <div class="pub-right">
         <div class="title">Seeing through Janus' Eyes: How Humans Spontaneously Adopt Multiple Perspectives of Robot Avatars</div>
         <div class="authors"><strong>Hu, X.</strong>, Xu, H., Chen, H., Shen, M., & Zhou, J.</div>
+        <div class="publish">Under review</div>
       </div>
     </div>
   </div>
