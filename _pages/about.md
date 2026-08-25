@@ -225,6 +225,17 @@ redirect_from:
   <div class="pub-list">
     <div class="pub">
       <div class="pub-left">
+        <img class="pub-cover" src="{{ "/info/Under_Review/Someone_May_Sit_There.gif" | relative_url }}" alt="Someone May Sit There animated cover" />
+        <div class="pub-badge">2026</div>
+      </div>
+      <div class="pub-right">
+        <div class="title">Someone May Sit There: Social Affordances Shape Visual Perspective-Taking</div>
+        <div class="authors"><strong>Hu</strong> et al.</div>
+        <div class="publish">Under review</div>
+      </div>
+    </div>
+    <div class="pub">
+      <div class="pub-left">
         <img class="pub-cover" src="{{ "/info/Under_Review/What_Others_See.gif" | relative_url }}" alt="What Others See Shapes What We See animated cover" />
         <div class="pub-badge">2026</div>
       </div>
