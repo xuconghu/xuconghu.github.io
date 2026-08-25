@@ -61,7 +61,7 @@ author_profile: true
       </div>
     </div>
     <div class="timeline-item">
-      <div class="timeline-date">Oct. 2025 - Present</div>
+      <div class="timeline-date">Oct. 2025 - Jul. 2026</div>
       <div class="timeline-title">
         <span class="timeline-org">
           <img class="timeline-logo" src="{{ "/images/hku_logo.png" | relative_url }}" alt="The University of Hong Kong logo" />
